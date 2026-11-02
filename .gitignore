@@ -218,3 +218,7 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Raw battery data (large, download from Zenodo 7896429)
+data/raw/
+*.h5

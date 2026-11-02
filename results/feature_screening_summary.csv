@@ -1,0 +1,50 @@
+feature,group,pooled_spearman,within_cell_median,sign_consistency,mutual_info,abs_pooled,mean_MAE_increase,folds_positive,keep
+dis1C_Q_3.8_3.5V,Partial-capacity HI,0.794,0.9494,0.9333,0.8925,0.794,0.008,2.0,True
+dis1C_t_to_3.6V_s,Partial-capacity HI,0.9537,0.991,1.0,1.5235,0.9537,0.4413,5.0,True
+dis_C3_CC_Ah,Partial-capacity HI,0.9373,0.9831,1.0,1.4533,0.9373,0.0121,3.0,True
+chg_CC_Ah,Partial-capacity HI,0.9611,0.9977,1.0,1.8675,0.9611,1.0996,5.0,True
+chg_CC_time_s,Partial-capacity HI,0.9616,0.9977,1.0,1.8621,0.9616,1.3957,5.0,True
+chg_CV_Ah,Partial-capacity HI,-0.8299,-0.9887,1.0,0.8179,0.8299,0.0124,3.0,True
+ica_area_3.4_3.8V,Partial-capacity HI,0.8625,0.9818,0.9333,1.0859,0.8625,0.0121,2.0,True
+R_1p13C_10s_mean,Shape / resistance HI,-0.933,-0.9831,1.0,1.2992,0.933,0.0077,3.0,True
+R_1p13C_inst_mean,Shape / resistance HI,-0.919,-0.9605,1.0,1.1112,0.919,0.0043,2.0,True
+R_1p35C_10s_mean,Shape / resistance HI,-0.9339,-0.9831,1.0,1.2727,0.9339,0.0109,3.0,True
+R_0p18C_10s_mean,Shape / resistance HI,-0.9285,-0.9844,1.0,1.2507,0.9285,-0.0024,2.0,True
+R_1p13C_10s_soc55,Shape / resistance HI,-0.9391,-0.9831,1.0,1.4049,0.9391,0.0366,4.0,True
+R_1p13C_10s_lowSOC,Shape / resistance HI,-0.8981,-0.9684,1.0,1.01,0.8981,-0.0096,2.0,True
+dis1C_IRdrop_ohm,Shape / resistance HI,-0.7123,-0.7143,1.0,0.4396,0.7123,0.006,1.0,True
+dis1C_dT,Shape / resistance HI,-0.0481,-0.3213,0.8,0.2629,0.0481,-0.012,2.0,False
+dis1C_meanV,Shape / resistance HI,0.9345,0.9944,1.0,1.3474,0.9345,0.0232,4.0,True
+relax_dV_after_dis,Shape / resistance HI,-0.213,-0.1854,0.6,0.3903,0.213,0.0024,2.0,False
+ica_p1_height,Shape / resistance HI,0.9346,0.9912,1.0,1.2376,0.9346,0.1625,5.0,True
+ica_p1_V,Shape / resistance HI,0.3159,0.8949,0.7333,0.975,0.3159,0.0019,3.0,False
+ica_p2_height,Shape / resistance HI,0.8154,0.9688,0.9333,1.0115,0.8154,0.0082,4.0,True
+ica_p2_V,Shape / resistance HI,0.5247,0.7693,0.9333,0.3874,0.5247,0.0094,4.0,True
+ica_p3_height,Shape / resistance HI,0.7891,0.9831,0.9333,1.0556,0.7891,0.1546,4.0,True
+ica_p3_V,Shape / resistance HI,0.7147,0.7737,1.0,0.5427,0.7147,0.0005,4.0,True
+chg_CC_fraction,Shape / resistance HI,0.9135,0.9955,1.0,1.2344,0.9135,0.0032,2.0,True
+chg_CV_time_s,Shape / resistance HI,-0.3483,-0.8058,0.9333,0.4831,0.3483,0.0066,4.0,True
+chg_CC_V0,Shape / resistance HI,-0.856,-0.861,1.0,1.0476,0.856,1.7677,5.0,True
+days_since_start,Usage history,-0.6076,-0.9842,1.0,0.3952,0.6076,0.0078,5.0,True
+cum_EFC,Usage history,-0.4472,-0.985,1.0,0.5698,0.4472,0.0201,5.0,True
+cum_dis_Ah,Usage history,-0.4373,-0.985,1.0,0.5575,0.4373,0.0225,5.0,True
+cum_lp_days,Usage history,-0.4791,-0.9864,1.0,0.3609,0.4791,0.0085,5.0,True
+cum_lp_T_mean,Usage history,-0.2809,-0.306,0.6667,0.2888,0.2809,0.0455,4.0,True
+rtp_index,Usage history,-0.606,-0.9842,1.0,0.3946,0.606,0.0052,4.0,True
+prev_lp_T_mean,Previous load period,-0.2503,0.3145,0.8667,0.3252,0.2503,0.0203,4.0,True
+prev_lp_T_max,Previous load period,-0.3618,0.0,0.0667,0.309,0.3618,0.0321,4.0,True
+prev_lp_V_mean,Previous load period,-0.2245,-0.0429,0.5333,0.5471,0.2245,-0.0038,2.0,False
+prev_lp_V_max,Previous load period,-0.037,-0.1994,0.5333,0.3919,0.037,0.0054,4.0,True
+prev_lp_V_min,Previous load period,0.2756,0.3846,0.8,0.507,0.2756,-0.0017,1.0,False
+prev_lp_I_dis_mean,Previous load period,0.4051,0.9006,1.0,0.9594,0.4051,0.0045,4.0,True
+prev_lp_I_chg_mean,Previous load period,0.1351,0.9481,1.0,0.7224,0.1351,0.0037,3.0,True
+prev_lp_I_dis_peak,Previous load period,0.4612,0.961,1.0,1.1699,0.4612,0.0055,3.0,True
+prev_lp_rest_frac,Previous load period,-0.2585,0.1,0.7333,0.1817,0.2585,0.0069,5.0,True
+prev_lp_dis_Ah,Previous load period,0.0948,0.2248,0.6667,0.3785,0.0948,-0.0022,1.0,False
+lp_T_set,Profile design,-0.3676,,,0.0868,0.3676,-0.0005,2.0,False
+lp_CC,Profile design,-0.036,,,0.029,0.036,-0.0002,1.0,False
+lp_ADC,Profile design,0.0588,,,0.0748,0.0588,-0.0007,2.0,False
+lp_PDC,Profile design,0.0079,,,0.0248,0.0079,-0.0001,1.0,False
+lp_F,Profile design,-0.1139,,,0.0266,0.1139,0.0003,2.0,False
+lp_SoC,Profile design,-0.3264,,,0.0711,0.3264,0.0001,4.0,True
+lp_dSoC,Profile design,-0.3692,,,0.1116,0.3692,-0.0004,2.0,False

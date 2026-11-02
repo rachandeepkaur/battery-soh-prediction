@@ -1,0 +1,31 @@
+feature_set,split,model,n_folds,MAE,RMSE,R2
+With partial-capacity HIs,Random split,Mean baseline,5,7.878934281823544,11.111096724857791,-0.001977857678118644
+With partial-capacity HIs,Random split,Ridge,5,0.3373401172796699,0.5016000502740233,0.9979579827309701
+With partial-capacity HIs,Random split,SVR (RBF),5,0.9414277771618748,2.3366383992683315,0.9556873944837551
+With partial-capacity HIs,Random split,Random forest,5,0.956883881095045,1.7729221838190918,0.9744892271247627
+With partial-capacity HIs,Random split,Gradient boosting,5,0.8377717342314972,1.7677984187808762,0.9746364668952611
+With partial-capacity HIs,Leave-cell-out,Mean baseline,15,8.17661471071501,11.432046015637521,-0.06069908837914495
+With partial-capacity HIs,Leave-cell-out,Ridge,15,1.295143880282893,1.7811424622455094,0.9742521137135381
+With partial-capacity HIs,Leave-cell-out,SVR (RBF),15,4.015557190058408,6.5881289489301045,0.6477358478689126
+With partial-capacity HIs,Leave-cell-out,Random forest,15,1.6445645221506495,2.521296188940086,0.9484068549677608
+With partial-capacity HIs,Leave-cell-out,Gradient boosting,15,1.621184557539149,2.5461069120816147,0.9473864580379383
+With partial-capacity HIs,Leave-profile-out,Mean baseline,14,8.236020608008712,11.464413351240829,-0.06671386562837367
+With partial-capacity HIs,Leave-profile-out,Ridge,14,1.3365349832169984,1.7986501083821091,0.9737434510157332
+With partial-capacity HIs,Leave-profile-out,SVR (RBF),14,5.472700905100103,7.825951242587941,0.5029288659728304
+With partial-capacity HIs,Leave-profile-out,Random forest,14,1.6748183137628554,2.524230968240861,0.9482866766105186
+With partial-capacity HIs,Leave-profile-out,Gradient boosting,14,1.7676431333927651,2.5973842879208653,0.945245894809362
+Without partial-capacity HIs,Random split,Mean baseline,5,7.878934281823544,11.111096724857791,-0.001977857678118644
+Without partial-capacity HIs,Random split,Ridge,5,0.9562505792920832,1.4546223482468947,0.9828270549977398
+Without partial-capacity HIs,Random split,SVR (RBF),5,0.9830278346866653,2.4164344946140583,0.9526091693267079
+Without partial-capacity HIs,Random split,Random forest,5,1.2022013803044354,2.287271065514281,0.9575400439782314
+Without partial-capacity HIs,Random split,Gradient boosting,5,1.0729429454700037,2.239610922914022,0.9592910949096818
+Without partial-capacity HIs,Leave-cell-out,Mean baseline,15,8.17661471071501,11.432046015637521,-0.06069908837914495
+Without partial-capacity HIs,Leave-cell-out,Ridge,15,2.229034248238646,3.231177035103824,0.9152644261668929
+Without partial-capacity HIs,Leave-cell-out,SVR (RBF),15,4.2488549738332795,6.893774167538648,0.6142922435929687
+Without partial-capacity HIs,Leave-cell-out,Random forest,15,2.3944436507969136,3.784728893666332,0.883744416766375
+Without partial-capacity HIs,Leave-cell-out,Gradient boosting,15,2.3071590785042293,3.590956303299256,0.8953439091760634
+Without partial-capacity HIs,Leave-profile-out,Mean baseline,14,8.236020608008712,11.464413351240829,-0.06671386562837367
+Without partial-capacity HIs,Leave-profile-out,Ridge,14,2.139478528604549,3.198992044519441,0.9169440810117357
+Without partial-capacity HIs,Leave-profile-out,SVR (RBF),14,5.7795545599700064,8.196242255747922,0.45477741126336446
+Without partial-capacity HIs,Leave-profile-out,Random forest,14,2.3932506624608036,3.7963581844089096,0.8830288848977407
+Without partial-capacity HIs,Leave-profile-out,Gradient boosting,14,2.371260453253225,3.628152465696849,0.8931645641667607
