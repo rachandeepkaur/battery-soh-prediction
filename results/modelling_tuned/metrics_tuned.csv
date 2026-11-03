@@ -1,0 +1,13 @@
+feature_set,split,model,MAE,RMSE,R2
+Main (no capacity measures),Random split,"SVR (RBF, tuned)",0.7722979918371206,1.4574267958223968,0.9827607738082464
+Main (no capacity measures),Random split,Random forest (tuned),1.0938507995216706,2.000666906762995,0.967514179162467
+Main (no capacity measures),Random split,Gradient boosting (tuned),1.1555474850200704,2.30219396290792,0.9569841915776418
+Main (no capacity measures),Random split,Multiple linear regression,1.680837039476361,2.5381975381126933,0.9477128338207141
+Main (no capacity measures),Leave-cell-out,"SVR (RBF, tuned)",3.439798801554449,5.405338926073364,0.7628680195189537
+Main (no capacity measures),Leave-cell-out,Random forest (tuned),1.9718931130560833,2.8732997071103945,0.9329951676341889
+Main (no capacity measures),Leave-cell-out,Gradient boosting (tuned),1.9531751654852019,3.147306040444881,0.9196062627030128
+Main (no capacity measures),Leave-cell-out,Multiple linear regression,2.68146564577957,4.023456972383691,0.8686158455705956
+Main (no capacity measures),Leave-profile-out,"SVR (RBF, tuned)",4.721442186110459,6.897780956091764,0.6138437523869941
+Main (no capacity measures),Leave-profile-out,Random forest (tuned),2.080628800054051,2.9786590177582,0.9279911544813315
+Main (no capacity measures),Leave-profile-out,Gradient boosting (tuned),2.0436675228434784,3.1384572718451325,0.920057687207339
+Main (no capacity measures),Leave-profile-out,Multiple linear regression,3.278622173527019,4.9400870801942665,0.8019323829346032

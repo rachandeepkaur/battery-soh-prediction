@@ -1,0 +1,61 @@
+feature_set,split,model,n_folds,MAE,RMSE,R2
+Main (no capacity measures),Random split,Mean baseline,5,7.878934281823544,11.111096724857791,-0.001977857678118644
+Main (no capacity measures),Random split,Ridge,5,1.8080370974973952,3.007287890998557,0.9266003009929886
+Main (no capacity measures),Random split,SVR (RBF),5,1.049170186921548,2.4271116750167416,0.9521894448538241
+Main (no capacity measures),Random split,Random forest,5,1.1152871485710916,2.1618664408059614,0.9620683278989557
+Main (no capacity measures),Random split,Gradient boosting,5,1.1609430278223674,2.3322662428742587,0.9558530687135519
+Main (no capacity measures),Leave-cell-out,Mean baseline,15,8.17661471071501,11.432046015637521,-0.06069908837914495
+Main (no capacity measures),Leave-cell-out,Ridge,15,2.5067937610360844,4.043132987654349,0.8673276808516077
+Main (no capacity measures),Leave-cell-out,SVR (RBF),15,4.808622963743611,7.789890902717367,0.5074991110939973
+Main (no capacity measures),Leave-cell-out,Random forest,15,2.315023039718142,3.924433561091066,0.8750033913858932
+Main (no capacity measures),Leave-cell-out,Gradient boosting,15,2.0033981539532864,3.122408967955314,0.9208731569147566
+Main (no capacity measures),Leave-profile-out,Mean baseline,14,8.236020608008712,11.464413351240829,-0.06671386562837367
+Main (no capacity measures),Leave-profile-out,Ridge,14,2.7959670153569034,4.296702315521524,0.8501644730189598
+Main (no capacity measures),Leave-profile-out,SVR (RBF),14,6.215518574611714,8.86633904916209,0.3619819913394482
+Main (no capacity measures),Leave-profile-out,Random forest,14,2.419588316005325,3.9909827365465054,0.8707281493412431
+Main (no capacity measures),Leave-profile-out,Gradient boosting,14,2.107891375469159,3.1975371304612765,0.9170196121436631
+Comparison (with capacity measures),Random split,Mean baseline,5,7.878934281823544,11.111096724857791,-0.001977857678118644
+Comparison (with capacity measures),Random split,Ridge,5,0.38693106084435397,0.5964676696805598,0.9971125259823029
+Comparison (with capacity measures),Random split,SVR (RBF),5,0.9653148580594556,2.3418124312935804,0.9554909338910998
+Comparison (with capacity measures),Random split,Random forest,5,0.9556966620637151,1.8392841727295037,0.97254370482099
+Comparison (with capacity measures),Random split,Gradient boosting,5,0.9616833434401252,2.107874279211938,0.9639393395247797
+Comparison (with capacity measures),Leave-cell-out,Mean baseline,15,8.17661471071501,11.432046015637521,-0.06069908837914495
+Comparison (with capacity measures),Leave-cell-out,Ridge,15,1.0019818013195412,1.4621159421835217,0.9826496638732807
+Comparison (with capacity measures),Leave-cell-out,SVR (RBF),15,4.265459196456919,7.063585677732947,0.5950562480543362
+Comparison (with capacity measures),Leave-cell-out,Random forest,15,1.515671878393137,2.4517561006900728,0.9512135972104064
+Comparison (with capacity measures),Leave-cell-out,Gradient boosting,15,1.533479011304467,2.464328316106918,0.9507119765525767
+Comparison (with capacity measures),Leave-profile-out,Mean baseline,14,8.236020608008712,11.464413351240829,-0.06671386562837367
+Comparison (with capacity measures),Leave-profile-out,Ridge,14,1.1127085483326735,1.5232388526464113,0.9811687007455658
+Comparison (with capacity measures),Leave-profile-out,SVR (RBF),14,5.6720610343704205,8.234910893590214,0.4496207193516564
+Comparison (with capacity measures),Leave-profile-out,Random forest,14,1.4939460850543949,2.445065201246141,0.9514795123270122
+Comparison (with capacity measures),Leave-profile-out,Gradient boosting,14,1.8373960475355533,2.705912211428883,0.9405746603071125
+Comparison (with same-test features),Random split,Mean baseline,5,7.878934281823544,11.111096724857791,-0.001977857678118644
+Comparison (with same-test features),Random split,Ridge,5,0.37436665575789013,0.5464801376125361,0.9975762209283038
+Comparison (with same-test features),Random split,SVR (RBF),5,1.1217170499213625,2.6110442742118596,0.944668462283769
+Comparison (with same-test features),Random split,Random forest,5,0.9721827156732862,1.8529562495639993,0.972134002210822
+Comparison (with same-test features),Random split,Gradient boosting,5,0.870334615867167,1.8479155160538607,0.9722854078472374
+Comparison (with same-test features),Leave-cell-out,Mean baseline,15,8.17661471071501,11.432046015637521,-0.06069908837914495
+Comparison (with same-test features),Leave-cell-out,Ridge,15,1.4293221383004375,2.1537777245801175,0.9623516428516777
+Comparison (with same-test features),Leave-cell-out,SVR (RBF),15,4.017885531594644,6.4958595020652705,0.6575339584607511
+Comparison (with same-test features),Leave-cell-out,Random forest,15,1.644152241989082,2.5378021831173654,0.9477291212704289
+Comparison (with same-test features),Leave-cell-out,Gradient boosting,15,1.615757742748507,2.5394701512014284,0.9476603887194548
+Comparison (with same-test features),Leave-profile-out,Mean baseline,14,8.236020608008712,11.464413351240829,-0.06671386562837367
+Comparison (with same-test features),Leave-profile-out,Ridge,14,1.6381350263267616,2.300996291274269,0.9570289362112787
+Comparison (with same-test features),Leave-profile-out,SVR (RBF),14,5.35520943482163,7.646185644189451,0.5255024829443549
+Comparison (with same-test features),Leave-profile-out,Random forest,14,1.645165222516527,2.5372178094114033,0.9477531910820746
+Comparison (with same-test features),Leave-profile-out,Gradient boosting,14,1.6948537246701483,2.5624204157148442,0.9467100835271971
+Cycle count only,Random split,Mean baseline,5,7.878934281823544,11.111096724857791,-0.001977857678118644
+Cycle count only,Random split,Ridge,5,7.71265780409433,10.877214951255947,0.03976022843047833
+Cycle count only,Random split,SVR (RBF),5,6.426764779359713,10.954485786967808,0.026068841420731848
+Cycle count only,Random split,Random forest,5,6.7133466535745985,9.780818552159015,0.22358365010784975
+Cycle count only,Random split,Gradient boosting,5,6.807081287271346,10.164866283150396,0.16141399990556526
+Cycle count only,Leave-cell-out,Mean baseline,15,8.17661471071501,11.432046015637521,-0.06069908837914495
+Cycle count only,Leave-cell-out,Ridge,15,9.076875437445421,12.380337799692494,-0.24396813884151647
+Cycle count only,Leave-cell-out,SVR (RBF),15,8.436750874085845,13.393575483099173,-0.45591938001536647
+Cycle count only,Leave-cell-out,Random forest,15,8.07186562469352,12.435587128322245,-0.25509574482834285
+Cycle count only,Leave-cell-out,Gradient boosting,15,8.588540225224449,12.960098104174671,-0.3632039815689101
+Cycle count only,Leave-profile-out,Mean baseline,14,8.236020608008712,11.464413351240829,-0.06671386562837367
+Cycle count only,Leave-profile-out,Ridge,14,10.373924723925025,14.662813546154847,-0.7449335460951705
+Cycle count only,Leave-profile-out,SVR (RBF),14,9.291497834974084,14.496632454147397,-0.705605248738074
+Cycle count only,Leave-profile-out,Random forest,14,9.884591979409837,14.979651776225575,-0.8211583238628668
+Cycle count only,Leave-profile-out,Gradient boosting,14,9.945863255319374,14.989346170973151,-0.8235162879682123

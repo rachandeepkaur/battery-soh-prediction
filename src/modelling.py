@@ -15,9 +15,9 @@ from sklearn.compose import TransformedTargetRegressor
 from sklearn.dummy import DummyRegressor
 from sklearn.ensemble import HistGradientBoostingRegressor, RandomForestRegressor
 from sklearn.impute import SimpleImputer
-from sklearn.linear_model import RidgeCV
+from sklearn.linear_model import Ridge
 from sklearn.metrics import mean_absolute_error, r2_score, root_mean_squared_error
-from sklearn.model_selection import KFold, LeaveOneGroupOut
+from sklearn.model_selection import GroupKFold, KFold, LeaveOneGroupOut
 from sklearn.pipeline import make_pipeline
 from sklearn.preprocessing import StandardScaler
 from sklearn.svm import SVR
@@ -68,6 +68,8 @@ def redundancy_blocks(X: pd.DataFrame, threshold: float = 0.95) -> pd.Series:
     Complete linkage on distance 1-|rho| cut at 1-threshold guarantees the "every pair" property.
     Returns a block id per feature.
     """
+    if X.shape[1] < 2:
+        return pd.Series(1, index=X.columns, name="block")
     corr = X.corr(method="spearman").abs().fillna(0.0).to_numpy(copy=True)
     np.fill_diagonal(corr, 1.0)
     dist = squareform(1.0 - corr, checks=False)
@@ -120,7 +122,7 @@ def make_models(random_state: int = 0) -> dict:
     scaled_y = lambda est: TransformedTargetRegressor(est, transformer=StandardScaler())
     return {
         "Mean baseline": (DummyRegressor(), False),
-        "Ridge": (RidgeCV(alphas=np.logspace(-3, 3, 13)), True),
+        "Ridge": (Ridge(), True),
         "SVR (RBF)": (scaled_y(SVR(C=10.0, epsilon=0.05, gamma="scale")), True),
         "Random forest": (RandomForestRegressor(400, min_samples_leaf=2, max_features=0.5,
                                                 random_state=random_state, n_jobs=-1), False),
@@ -146,6 +148,20 @@ def splitters(df: pd.DataFrame, n_random: int = 5, random_state: int = 0) -> dic
     }
 
 
+def grouped_ridge_alpha(X: pd.DataFrame, y, feats, threshold: float = 0.95,
+                        alphas=np.logspace(-3, 3, 13), n_inner: int = 5) -> float:
+    groups = X["cell_id"].values
+    inner = GroupKFold(n_splits=min(n_inner, len(np.unique(groups))))
+    scores = {}
+    for a in alphas:
+        errs = []
+        for tr, te in inner.split(X, y, groups):
+            pipe = build_pipeline(feats, Ridge(alpha=a), True, threshold).fit(X.iloc[tr], y[tr])
+            errs.append(mean_absolute_error(y[te], pipe.predict(X.iloc[te])))
+        scores[a] = np.mean(errs)
+    return min(scores, key=scores.get)
+
+
 def evaluate(df: pd.DataFrame, feature_sets: dict, target: str = "SOH", threshold: float = 0.95):
     """Run every model x feature set x split. Returns (metrics, out-of-fold predictions, selections)."""
     y = df[target].values
@@ -158,7 +174,10 @@ def evaluate(df: pd.DataFrame, feature_sets: dict, target: str = "SOH", threshol
                 oof = np.full(len(y), np.nan)
                 fold_id = np.full(len(y), -1)
                 for k, (tr, te) in enumerate(folds):
-                    pipe = build_pipeline(feats, model, scale, threshold).fit(X.iloc[tr], y[tr])
+                    est = model
+                    if m_name == "Ridge":
+                        est = Ridge(alpha=grouped_ridge_alpha(X.iloc[tr], y[tr], feats, threshold))
+                    pipe = build_pipeline(feats, est, scale, threshold).fit(X.iloc[tr], y[tr])
                     oof[te] = pipe.predict(X.iloc[te])
                     fold_id[te] = k
                     if m_name == "Ridge":     # selection is model-independent; record it once

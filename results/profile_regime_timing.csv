@@ -1,0 +1,46 @@
+feature_set,model,regime,MAE,n_rows,n_cells,n_profiles
+Comparison (with same-test features),Gradient boosting,extrapolation,2.782637244603173,66,4,4
+Comparison (with same-test features),Gradient boosting,interpolation,1.2257447612201473,219,10,9
+Comparison (with same-test features),Gradient boosting,unclassified,3.168241852287795,21,1,1
+Comparison (with same-test features),Mean baseline,extrapolation,13.865235855595463,66,4,4
+Comparison (with same-test features),Mean baseline,interpolation,6.32884762493569,219,10,9
+Comparison (with same-test features),Mean baseline,unclassified,10.433290939068995,21,1,1
+Comparison (with same-test features),Random forest,extrapolation,2.577320309642254,66,4,4
+Comparison (with same-test features),Random forest,interpolation,1.2227835266554774,219,10,9
+Comparison (with same-test features),Random forest,unclassified,3.120372634100847,21,1,1
+Comparison (with same-test features),Ridge,extrapolation,3.3864927087700423,66,4,4
+Comparison (with same-test features),Ridge,interpolation,1.2310157111126325,219,10,9
+Comparison (with same-test features),Ridge,unclassified,0.3889694544521904,21,1,1
+Comparison (with same-test features),SVR (RBF),extrapolation,9.626317055917287,66,4,4
+Comparison (with same-test features),SVR (RBF),interpolation,4.378150932208649,219,10,9
+Comparison (with same-test features),SVR (RBF),unclassified,2.1210527243420745,21,1,1
+Cycle count only,Gradient boosting,extrapolation,16.1544987785617,66,4,4
+Cycle count only,Gradient boosting,interpolation,8.354798581365534,219,10,9
+Cycle count only,Gradient boosting,unclassified,7.025540353504976,21,1,1
+Cycle count only,Mean baseline,extrapolation,13.865235855595463,66,4,4
+Cycle count only,Mean baseline,interpolation,6.32884762493569,219,10,9
+Cycle count only,Mean baseline,unclassified,10.433290939068995,21,1,1
+Cycle count only,Random forest,extrapolation,15.330965909211644,66,4,4
+Cycle count only,Random forest,interpolation,8.447019636487338,219,10,9
+Cycle count only,Random forest,unclassified,7.759242633367341,21,1,1
+Cycle count only,Ridge,extrapolation,13.893293663347578,66,4,4
+Cycle count only,Ridge,interpolation,9.338494233281125,219,10,9
+Cycle count only,Ridge,unclassified,10.111111745311993,21,1,1
+Cycle count only,SVR (RBF),extrapolation,14.831617345696163,66,4,4
+Cycle count only,SVR (RBF),interpolation,7.622971607552098,219,10,9
+Cycle count only,SVR (RBF),unclassified,9.280038601533978,21,1,1
+Main (no same-test features),Gradient boosting,extrapolation,2.820919550778729,66,4,4
+Main (no same-test features),Gradient boosting,interpolation,1.5255156985684042,219,10,9
+Main (no same-test features),Gradient boosting,unclassified,1.998788676571559,21,1,1
+Main (no same-test features),Mean baseline,extrapolation,13.865235855595463,66,4,4
+Main (no same-test features),Mean baseline,interpolation,6.32884762493569,219,10,9
+Main (no same-test features),Mean baseline,unclassified,10.433290939068995,21,1,1
+Main (no same-test features),Random forest,extrapolation,2.532129252080472,66,4,4
+Main (no same-test features),Random forest,interpolation,1.1668755598994114,219,10,9
+Main (no same-test features),Random forest,unclassified,1.6419630367315352,21,1,1
+Main (no same-test features),Ridge,extrapolation,2.129504848788042,66,4,4
+Main (no same-test features),Ridge,interpolation,0.8870280776375737,219,10,9
+Main (no same-test features),Ridge,unclassified,0.2705879412932693,21,1,1
+Main (no same-test features),SVR (RBF),extrapolation,10.71163348684039,66,4,4
+Main (no same-test features),SVR (RBF),interpolation,4.41802265872131,219,10,9
+Main (no same-test features),SVR (RBF),unclassified,2.911233529805531,21,1,1
