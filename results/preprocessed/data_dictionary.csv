@@ -1,0 +1,76 @@
+column,group,meaning,unit,role,dtype
+cell_id,Identifier,Battery cell ID (one HDF5 file),-,id,text
+profile,Identifier,Ageing profile the cell was cycled under,-,id,text
+idtest,Identifier,Test number inside the cell's file,-,id,int64
+expname,Identifier,"Test name, e.g. RTP25 = reference test at 25 °C",-,id,text
+rtp_T_set,Identifier,Temperature of the reference test,°C,id,int64
+schedule,Test setting,Check-up procedure: standard (RTP) or high-current (RTP_highCurrent),category,input,text
+days_since_start,Usage history,Time since the first test / number of 25 °C check-ups so far,days / count,input,float64
+cum_dis_Ah,Usage history,Total charge moved so far (EFC = equivalent full cycles),Ah / cycles,input,float64
+cum_chg_Ah,Usage history,Total charge moved so far (EFC = equivalent full cycles),Ah / cycles,input,float64
+cum_lp_days,Usage history,"Time spent in ageing periods, and their mean temperature",days / °C,input,float64
+cum_lp_Tdays,Usage history,"Time spent in ageing periods, and their mean temperature",days / °C,input,float64
+cum_EFC,Usage history,Total charge moved so far (EFC = equivalent full cycles),Ah / cycles,input,float64
+cum_lp_T_mean,Usage history,"Time spent in ageing periods, and their mean temperature",days / °C,input,float64
+cap_1C_Ah,Capacity (leaky),Measured capacity / the cell's reference capacity (SOH's numerator / denominator),Ah,leaky,float64
+cap_1C_spread_Ah,Capacity (leaky),Difference between the two full discharges in one check-up,Ah,leaky,float64
+dis1C_energy_Wh,Capacity (leaky),Energy of the full discharge (≈ capacity × voltage),Wh,leaky,float64
+dis1C_meanV,Inside the target discharge,Shape / temperature / partial window of the full 1C discharge,V / °C / Ω / Ah / s,comparison,float64
+dis1C_dT,Inside the target discharge,Shape / temperature / partial window of the full 1C discharge,V / °C / Ω / Ah / s,comparison,float64
+dis1C_Tstart,Inside the target discharge,Shape / temperature / partial window of the full 1C discharge,V / °C / Ω / Ah / s,comparison,float64
+dis1C_IRdrop_ohm,Inside the target discharge,Shape / temperature / partial window of the full 1C discharge,V / °C / Ω / Ah / s,comparison,float64
+dis1C_Q_3.8_3.5V,Inside the target discharge,Shape / temperature / partial window of the full 1C discharge,V / °C / Ω / Ah / s,comparison,float64
+dis1C_t_to_3.6V_s,Inside the target discharge,Shape / temperature / partial window of the full 1C discharge,V / °C / Ω / Ah / s,comparison,float64
+relax_dV_after_dis,Inside the target discharge,Shape / temperature / partial window of the full 1C discharge,V / °C / Ω / Ah / s,comparison,float64
+ica_area_3.4_3.8V,Inside the target discharge,Incremental-capacity (dQ/dV) peak height / position or area on the 1C discharge,Ah/V / V / Ah,comparison,float64
+ica_p1_height,Inside the target discharge,Incremental-capacity (dQ/dV) peak height / position or area on the 1C discharge,Ah/V / V / Ah,comparison,float64
+ica_p1_V,Inside the target discharge,Incremental-capacity (dQ/dV) peak height / position or area on the 1C discharge,Ah/V / V / Ah,comparison,float64
+ica_p2_height,Inside the target discharge,Incremental-capacity (dQ/dV) peak height / position or area on the 1C discharge,Ah/V / V / Ah,comparison,float64
+ica_p2_V,Inside the target discharge,Incremental-capacity (dQ/dV) peak height / position or area on the 1C discharge,Ah/V / V / Ah,comparison,float64
+ica_p3_height,Inside the target discharge,Incremental-capacity (dQ/dV) peak height / position or area on the 1C discharge,Ah/V / V / Ah,comparison,float64
+ica_p3_V,Inside the target discharge,Incremental-capacity (dQ/dV) peak height / position or area on the 1C discharge,Ah/V / V / Ah,comparison,float64
+dis_C3_CC_Ah,Capacity measure,Charge / time of a charge or C/3 discharge step; capacity in disguise,Ah / s / ratio,comparison,float64
+R_1p35C_10s_mean,Pulse resistance,Internal resistance from 10 s current pulses (rises as the cell ages),Ω,input,float64
+R_1p35C_inst_mean,Pulse resistance,Internal resistance from 10 s current pulses (rises as the cell ages),Ω,input,float64
+R_1p35C_n,Pulse resistance,Number of pulses of that size found in the test,count,input,int64
+R_1p35C_10s_soc55,Pulse resistance,Internal resistance from 10 s current pulses (rises as the cell ages),Ω,input,float64
+R_1p35C_10s_lowSOC,Pulse resistance,Internal resistance from 10 s current pulses (rises as the cell ages),Ω,input,float64
+R_1p13C_10s_mean,Pulse resistance,Internal resistance from 10 s current pulses (rises as the cell ages),Ω,input,float64
+R_1p13C_inst_mean,Pulse resistance,Internal resistance from 10 s current pulses (rises as the cell ages),Ω,input,float64
+R_1p13C_n,Pulse resistance,Number of pulses of that size found in the test,count,input,int64
+R_1p13C_10s_soc55,Pulse resistance,Internal resistance from 10 s current pulses (rises as the cell ages),Ω,input,float64
+R_1p13C_10s_lowSOC,Pulse resistance,Internal resistance from 10 s current pulses (rises as the cell ages),Ω,input,float64
+R_0p18C_10s_mean,Pulse resistance,Internal resistance from 10 s current pulses (rises as the cell ages),Ω,input,float64
+R_0p18C_inst_mean,Pulse resistance,Internal resistance from 10 s current pulses (rises as the cell ages),Ω,input,float64
+R_0p18C_n,Pulse resistance,Number of pulses of that size found in the test,count,input,float64
+R_0p18C_10s_soc55,Pulse resistance,Internal resistance from 10 s current pulses (rises as the cell ages),Ω,input,float64
+R_0p18C_10s_lowSOC,Pulse resistance,Internal resistance from 10 s current pulses (rises as the cell ages),Ω,input,float64
+rtp_T_mean,Inside the target discharge,Shape / temperature / partial window of the full 1C discharge,V / °C / Ω / Ah / s,comparison,float64
+chg_CC_time_s,Capacity measure,Charge / time of a charge or C/3 discharge step; capacity in disguise,Ah / s / ratio,comparison,float64
+chg_CC_Ah,Capacity measure,Charge / time of a charge or C/3 discharge step; capacity in disguise,Ah / s / ratio,comparison,float64
+chg_CC_V0,Recharge between the target discharges,Voltage at the start of / time of the recharge right after a full discharge,V / s,comparison,float64
+chg_CV_Ah,Capacity measure,Charge / time of a charge or C/3 discharge step; capacity in disguise,Ah / s / ratio,comparison,float64
+chg_CV_time_s,Recharge between the target discharges,Voltage at the start of / time of the recharge right after a full discharge,V / s,comparison,float64
+chg_CC_fraction,Capacity measure,Charge / time of a charge or C/3 discharge step; capacity in disguise,Ah / s / ratio,comparison,float64
+prev_lp_days,Previous ageing period,"Measured conditions of the ageing period just before this check-up (temperature, voltage, current, rest share)",mixed,input,float64
+prev_lp_dis_Ah,Previous ageing period,"Measured conditions of the ageing period just before this check-up (temperature, voltage, current, rest share)",mixed,input,float64
+prev_lp_chg_Ah,Previous ageing period,"Measured conditions of the ageing period just before this check-up (temperature, voltage, current, rest share)",mixed,input,float64
+prev_lp_T_mean,Previous ageing period,"Measured conditions of the ageing period just before this check-up (temperature, voltage, current, rest share)",mixed,input,float64
+prev_lp_T_max,Previous ageing period,"Measured conditions of the ageing period just before this check-up (temperature, voltage, current, rest share)",mixed,input,float64
+prev_lp_V_mean,Previous ageing period,"Measured conditions of the ageing period just before this check-up (temperature, voltage, current, rest share)",mixed,input,float64
+prev_lp_V_max,Previous ageing period,"Measured conditions of the ageing period just before this check-up (temperature, voltage, current, rest share)",mixed,input,float64
+prev_lp_V_min,Previous ageing period,"Measured conditions of the ageing period just before this check-up (temperature, voltage, current, rest share)",mixed,input,float64
+prev_lp_I_dis_mean,Previous ageing period,"Measured conditions of the ageing period just before this check-up (temperature, voltage, current, rest share)",mixed,input,float64
+prev_lp_I_chg_mean,Previous ageing period,"Measured conditions of the ageing period just before this check-up (temperature, voltage, current, rest share)",mixed,input,float64
+prev_lp_I_dis_peak,Previous ageing period,"Measured conditions of the ageing period just before this check-up (temperature, voltage, current, rest share)",mixed,input,float64
+prev_lp_rest_frac,Previous ageing period,"Measured conditions of the ageing period just before this check-up (temperature, voltage, current, rest share)",mixed,input,float64
+lp_T_set,Profile design,"Designed setting of the profile (T_set, charge/discharge C-rate, frequency, SoC, ΔSoC); from the dataset paper",mixed,input,float64
+lp_CC,Profile design,"Designed setting of the profile (T_set, charge/discharge C-rate, frequency, SoC, ΔSoC); from the dataset paper",mixed,input,float64
+lp_ADC,Profile design,"Designed setting of the profile (T_set, charge/discharge C-rate, frequency, SoC, ΔSoC); from the dataset paper",mixed,input,float64
+lp_PDC,Profile design,"Designed setting of the profile (T_set, charge/discharge C-rate, frequency, SoC, ΔSoC); from the dataset paper",mixed,input,float64
+lp_F,Profile design,"Designed setting of the profile (T_set, charge/discharge C-rate, frequency, SoC, ΔSoC); from the dataset paper",mixed,input,float64
+lp_SoC,Profile design,"Designed setting of the profile (T_set, charge/discharge C-rate, frequency, SoC, ΔSoC); from the dataset paper",mixed,input,float64
+lp_dSoC,Profile design,"Designed setting of the profile (T_set, charge/discharge C-rate, frequency, SoC, ΔSoC); from the dataset paper",mixed,input,float64
+cap_ref_Ah,Capacity (leaky),Measured capacity / the cell's reference capacity (SOH's numerator / denominator),Ah,leaky,float64
+SOH,Target,State of health = capacity / the cell's first 25 °C capacity,%,target,float64
+rtp_index,Usage history,Time since the first test / number of 25 °C check-ups so far,days / count,input,int64

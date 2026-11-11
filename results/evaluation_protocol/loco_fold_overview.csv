@@ -1,0 +1,16 @@
+fold,cell,profile,rows,SOH_min,SOH_last,EOL_rows,regime
+0,2_009,L03,21,87.2,87.2,0,interpolation
+1,2_010,L03,21,89.7,89.7,0,interpolation
+2,2_012,L35,22,51.5,56.6,16,extrapolation
+3,2_027,L208,22,92.8,92.8,0,interpolation
+4,2_030,L210,22,87.7,87.7,0,interpolation
+5,2_033,L211,22,70.2,73.0,3,interpolation
+6,2_058,L213,22,78.4,79.5,2,interpolation
+7,2_067,V212,21,47.0,55.2,6,unclassified
+8,2_076,L223,6,40.1,40.1,5,extrapolation
+9,2_092,L202,22,88.2,88.2,0,extrapolation
+10,2_095,L206,16,33.3,38.4,8,extrapolation
+11,2_098,L209,22,87.6,87.8,0,interpolation
+12,2_101,L214,22,77.1,77.4,5,interpolation
+13,2_104,L216,22,62.4,62.4,8,interpolation
+14,2_108,L207,23,93.2,93.2,0,interpolation

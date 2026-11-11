@@ -1,47 +1,65 @@
-feature,group,pooled_spearman,within_cell_median,sign_consistency,mutual_info,abs_pooled,block,mean_MAE_increase,folds_positive,rule_corr,rule_importance,keep,score,representative
-R_1p13C_10s_mean,Pulse resistance HI,-0.933,-0.9831,1.0,1.2985,0.933,Pulse resistance HI #1,0.1538,5,True,True,True,0.9831,False
-R_1p13C_inst_mean,Pulse resistance HI,-0.919,-0.9605,1.0,1.1114,0.919,Pulse resistance HI #1,0.1538,5,True,True,True,0.9605,False
-R_1p35C_10s_mean,Pulse resistance HI,-0.9339,-0.9831,1.0,1.2727,0.9339,Pulse resistance HI #1,0.1538,5,True,True,True,0.9831,False
-R_0p18C_10s_mean,Pulse resistance HI,-0.9285,-0.9844,1.0,1.2534,0.9285,Pulse resistance HI #1,0.1538,5,True,True,True,0.9844,True
-R_1p13C_10s_soc55,Pulse resistance HI,-0.9391,-0.9831,1.0,1.4068,0.9391,Pulse resistance HI #1,0.1538,5,True,True,True,0.9831,False
-R_1p13C_10s_lowSOC,Pulse resistance HI,-0.8981,-0.9684,1.0,1.0114,0.8981,Pulse resistance HI #1,0.1538,5,True,True,True,0.9684,False
-dis1C_IRdrop_ohm,Pulse resistance HI,-0.7123,-0.7143,1.0,0.4396,0.7123,Pulse resistance HI #2,0.0016,1,True,False,True,0.7143,True
-dis1C_Q_3.8_3.5V,Partial-window HI,0.794,0.9494,0.9333,0.8931,0.794,Partial-window HI #1,0.0151,2,True,False,True,0.8861,False
-dis1C_t_to_3.6V_s,Partial-window HI,0.9537,0.991,1.0,1.5191,0.9537,Partial-window HI #3,0.5428,5,True,True,True,0.991,True
-dis_C3_CC_Ah,Partial-window HI,0.9373,0.9831,1.0,1.4533,0.9373,Partial-window HI #3,0.5428,5,True,True,True,0.9831,False
-ica_area_3.4_3.8V,Partial-window HI,0.8625,0.9818,0.9333,1.0838,0.8625,Partial-window HI #1,0.0151,2,True,False,True,0.9164,True
-ica_p2_height,Partial-window HI,0.8154,0.9688,0.9333,1.0101,0.8154,Partial-window HI #4,0.0051,4,True,False,True,0.9042,True
-ica_p2_V,Partial-window HI,0.5247,0.7693,0.9333,0.3814,0.5247,Partial-window HI #5,0.0109,5,True,False,True,0.718,True
-ica_p3_height,Partial-window HI,0.7891,0.9831,0.9333,1.0558,0.7891,Partial-window HI #2,0.1461,5,True,True,True,0.9176,True
-ica_p3_V,Partial-window HI,0.7147,0.7737,1.0,0.5424,0.7147,Partial-window HI #6,0.0007,2,True,False,True,0.7737,True
-dis1C_meanV,Full-cycle HI,0.9345,0.9944,1.0,1.3448,0.9345,Full-cycle HI #2,0.2299,5,True,True,True,0.9944,True
-ica_p1_height,Full-cycle HI,0.9346,0.9912,1.0,1.2373,0.9346,Full-cycle HI #2,0.2299,5,True,True,True,0.9912,False
-ica_p1_V,Full-cycle HI,0.3159,0.8949,0.7333,0.9727,0.3159,Full-cycle HI #5,-0.001,2,False,False,False,0.6563,False
-dis1C_dT,Full-cycle HI,-0.0481,-0.3213,0.8,0.2631,0.0481,Full-cycle HI #8,-0.0099,1,False,False,False,0.257,False
-relax_dV_after_dis,Full-cycle HI,-0.213,-0.1854,0.6,0.3885,0.213,Full-cycle HI #6,0.0045,2,False,False,False,0.1112,False
-chg_CC_V0,Full-cycle HI,-0.856,-0.861,1.0,1.0469,0.856,Full-cycle HI #4,1.7515,5,True,True,True,0.861,True
-chg_CC_Ah,Full-cycle HI,0.9611,0.9977,1.0,1.8687,0.9611,Full-cycle HI #1,3.1513,5,True,True,True,0.9977,False
-chg_CC_time_s,Full-cycle HI,0.9616,0.9977,1.0,1.8633,0.9616,Full-cycle HI #1,3.1513,5,True,True,True,0.9977,True
-chg_CV_Ah,Full-cycle HI,-0.8299,-0.9887,1.0,0.8131,0.8299,Full-cycle HI #3,0.017,3,True,False,True,0.9887,True
-chg_CC_fraction,Full-cycle HI,0.9135,0.9955,1.0,1.2344,0.9135,Full-cycle HI #1,3.1513,5,True,True,True,0.9955,False
-chg_CV_time_s,Full-cycle HI,-0.3483,-0.8058,0.9333,0.4812,0.3483,Full-cycle HI #7,0.0075,5,True,False,True,0.752,True
-days_since_start,Usage history,-0.6076,-0.9842,1.0,0.4015,0.6076,Usage history #1,0.0132,5,True,False,True,0.9842,True
-cum_EFC,Usage history,-0.4472,-0.985,1.0,0.571,0.4472,Usage history #2,0.0485,5,True,True,True,0.985,True
-cum_dis_Ah,Usage history,-0.4373,-0.985,1.0,0.5555,0.4373,Usage history #2,0.0485,5,True,True,True,0.985,False
-cum_lp_days,Usage history,-0.4791,-0.9864,1.0,0.3592,0.4791,Usage history #3,0.0071,5,True,False,True,0.9864,True
-cum_lp_T_mean,Usage history,-0.2809,-0.306,0.6667,0.289,0.2809,Usage history #4,0.0536,4,False,True,True,0.204,True
-rtp_index,Usage history,-0.606,-0.9842,1.0,0.3769,0.606,Usage history #1,0.0132,5,True,False,True,0.9842,False
-prev_lp_T_mean,Previous load period,-0.2503,0.3145,0.8667,0.3401,0.2503,Previous load period #1,0.0225,4,False,True,True,0.2726,True
-prev_lp_T_max,Previous load period,-0.3618,0.0,0.0667,0.3079,0.3618,Previous load period #2,0.0406,4,False,True,True,0.0,True
-prev_lp_V_mean,Previous load period,-0.2245,-0.0429,0.5333,0.5494,0.2245,Previous load period #6,-0.0088,0,False,False,False,0.0229,False
-prev_lp_V_max,Previous load period,-0.037,-0.1994,0.5333,0.3913,0.037,Previous load period #7,0.0065,4,False,False,False,0.1064,False
-prev_lp_V_min,Previous load period,0.2756,0.3846,0.8,0.5177,0.2756,Previous load period #4,-0.0009,1,False,False,False,0.3077,False
-prev_lp_rest_frac,Previous load period,-0.2585,0.1,0.7333,0.1831,0.2585,Previous load period #3,0.0044,5,False,False,False,0.0733,False
-prev_lp_dis_Ah,Previous load period,0.0948,0.2248,0.6667,0.3793,0.0948,Previous load period #5,-0.0037,3,False,False,False,0.1499,False
-lp_T_set,Profile design,-0.3676,,,0.0925,0.3676,Profile design #6,-0.0005,3,False,False,False,0.1838,False
-lp_CC,Profile design,-0.036,,,0.0111,0.036,Profile design #3,-0.0001,1,False,False,False,0.018,False
-lp_ADC,Profile design,0.0588,,,0.0704,0.0588,Profile design #5,-0.0003,1,False,False,False,0.0294,False
-lp_PDC,Profile design,0.0079,,,0.0074,0.0079,Profile design #4,-0.0001,1,False,False,False,0.004,False
-lp_F,Profile design,-0.1139,,,0.0231,0.1139,Profile design #7,0.0002,2,False,False,False,0.057,False
-lp_SoC,Profile design,-0.3264,,,0.0759,0.3264,Profile design #1,-0.0002,4,False,False,False,0.1632,False
-lp_dSoC,Profile design,-0.3692,,,0.1033,0.3692,Profile design #2,-0.0005,1,False,False,False,0.1846,False
+feature,group,pooled_spearman,within_cell_median,sign_consistency,mutual_info,abs_pooled,mean_MAE_increase,folds_positive,role,keep
+R_1p35C_10s_mean,Pulse resistance,-0.9339,-0.9831,1.0,1.2727,0.9339,0.1061,4.0,main input,True
+R_1p35C_inst_mean,Pulse resistance,-0.9301,-0.9729,1.0,1.1639,0.9301,0.7718,4.0,main input,True
+R_1p35C_n,Pulse resistance,-0.0186,-0.253,0.8333,0.0074,0.0186,0.0001,3.0,main input,False
+R_1p35C_10s_soc55,Pulse resistance,-0.9387,-0.9818,1.0,1.3119,0.9387,2.3338,5.0,main input,True
+R_1p35C_10s_lowSOC,Pulse resistance,-0.9004,-0.9684,1.0,0.966,0.9004,-0.0096,2.0,main input,True
+R_1p13C_10s_mean,Pulse resistance,-0.933,-0.9831,1.0,1.298,0.933,0.0594,3.0,main input,True
+R_1p13C_inst_mean,Pulse resistance,-0.919,-0.9605,1.0,1.1148,0.919,0.3733,3.0,main input,True
+R_1p13C_n,Pulse resistance,0.0768,-0.0516,1.0,0.0,0.0768,0.0,3.0,main input,False
+R_1p13C_10s_soc55,Pulse resistance,-0.9391,-0.9831,1.0,1.4037,0.9391,0.5733,5.0,main input,True
+R_1p13C_10s_lowSOC,Pulse resistance,-0.8981,-0.9684,1.0,1.0131,0.8981,-0.0091,2.0,main input,True
+R_0p18C_10s_mean,Pulse resistance,-0.9285,-0.9844,1.0,1.2501,0.9285,0.1726,3.0,main input,True
+R_0p18C_inst_mean,Pulse resistance,-0.9025,-0.9537,1.0,1.0031,0.9025,0.0493,3.0,main input,True
+R_0p18C_n,Pulse resistance,0.0797,-0.0516,1.0,0.0,0.0797,0.0,3.0,main input,False
+R_0p18C_10s_soc55,Pulse resistance,-0.9356,-0.982,1.0,1.2775,0.9356,0.2471,5.0,main input,True
+R_0p18C_10s_lowSOC,Pulse resistance,-0.8959,-0.9684,1.0,0.9804,0.8959,0.0576,3.0,main input,True
+days_since_start,Usage history,-0.6076,-0.9842,1.0,0.4029,0.6076,0.0014,2.0,main input,True
+rtp_index,Usage history,-0.606,-0.9842,1.0,0.3955,0.606,-0.0196,2.0,main input,True
+cum_dis_Ah,Usage history,-0.4373,-0.985,1.0,0.5659,0.4373,0.016,4.0,main input,True
+cum_chg_Ah,Usage history,-0.4529,-0.985,1.0,0.5751,0.4529,0.0151,5.0,main input,True
+cum_EFC,Usage history,-0.4472,-0.985,1.0,0.5677,0.4472,0.0123,5.0,main input,True
+cum_lp_days,Usage history,-0.4791,-0.9864,1.0,0.3611,0.4791,0.0087,4.0,main input,True
+cum_lp_Tdays,Usage history,-0.5026,-0.9864,1.0,0.4289,0.5026,0.0198,4.0,main input,True
+cum_lp_T_mean,Usage history,-0.2809,-0.306,0.6667,0.3101,0.2809,-0.0365,2.0,main input,False
+prev_lp_days,Previous load period,0.0247,-0.1297,0.7333,0.1658,0.0247,-0.0068,2.0,main input,False
+prev_lp_dis_Ah,Previous load period,0.0948,0.2248,0.6667,0.3765,0.0948,-0.0059,2.0,main input,False
+prev_lp_chg_Ah,Previous load period,0.074,0.2268,0.6,0.3629,0.074,-0.0103,0.0,main input,False
+prev_lp_T_mean,Previous load period,-0.2503,0.3145,0.8667,0.3249,0.2503,-0.0188,1.0,main input,False
+prev_lp_T_max,Previous load period,-0.3618,0.0,0.0667,0.3084,0.3618,0.0025,2.0,main input,False
+prev_lp_V_mean,Previous load period,-0.2245,-0.0429,0.5333,0.5472,0.2245,-0.0252,2.0,main input,False
+prev_lp_V_max,Previous load period,-0.037,-0.1994,0.5333,0.3867,0.037,0.0014,2.0,main input,False
+prev_lp_V_min,Previous load period,0.2756,0.3846,0.8,0.5159,0.2756,-0.0196,1.0,main input,False
+prev_lp_I_dis_mean,Previous load period,0.4051,0.9006,1.0,0.9555,0.4051,0.0133,2.0,main input,True
+prev_lp_I_chg_mean,Previous load period,0.1351,0.9481,1.0,0.7274,0.1351,-0.0146,2.0,main input,True
+prev_lp_I_dis_peak,Previous load period,0.4612,0.961,1.0,1.1679,0.4612,0.1107,2.0,main input,True
+prev_lp_rest_frac,Previous load period,-0.2585,0.1,0.7333,0.1892,0.2585,-0.0201,3.0,main input,False
+lp_T_set,Profile design,-0.3676,,,0.0845,0.3676,-0.0028,2.0,main input,False
+lp_CC,Profile design,-0.036,,,0.0145,0.036,0.0001,2.0,main input,False
+lp_ADC,Profile design,0.0588,,,0.0656,0.0588,-0.0049,1.0,main input,False
+lp_PDC,Profile design,0.0079,,,0.0,0.0079,0.0,3.0,main input,False
+lp_F,Profile design,-0.1139,,,0.0239,0.1139,0.0005,4.0,main input,True
+lp_SoC,Profile design,-0.3264,,,0.0751,0.3264,-0.0196,3.0,main input,False
+lp_dSoC,Profile design,-0.3692,,,0.1108,0.3692,0.0005,3.0,main input,False
+dis_C3_CC_Ah,Capacity measure (comparison),0.9373,0.9831,1.0,1.4522,0.9373,,,comparison only,False
+chg_CC_Ah,Capacity measure (comparison),0.9611,0.9977,1.0,1.8669,0.9611,,,comparison only,False
+chg_CC_time_s,Capacity measure (comparison),0.9616,0.9977,1.0,1.8624,0.9616,,,comparison only,False
+chg_CV_Ah,Capacity measure (comparison),-0.8299,-0.9887,1.0,0.816,0.8299,,,comparison only,False
+chg_CC_fraction,Capacity measure (comparison),0.9135,0.9955,1.0,1.2351,0.9135,,,comparison only,False
+dis1C_Q_3.8_3.5V,Inside target test (comparison),0.794,0.9494,0.9333,0.8939,0.794,,,comparison only,False
+dis1C_t_to_3.6V_s,Inside target test (comparison),0.9537,0.991,1.0,1.52,0.9537,,,comparison only,False
+ica_area_3.4_3.8V,Inside target test (comparison),0.8625,0.9818,0.9333,1.0853,0.8625,,,comparison only,False
+dis1C_IRdrop_ohm,Inside target test (comparison),-0.7123,-0.7143,1.0,0.4404,0.7123,,,comparison only,False
+dis1C_dT,Inside target test (comparison),-0.0481,-0.3213,0.8,0.2657,0.0481,,,comparison only,False
+dis1C_meanV,Inside target test (comparison),0.9345,0.9944,1.0,1.3438,0.9345,,,comparison only,False
+relax_dV_after_dis,Inside target test (comparison),-0.213,-0.1854,0.6,0.3897,0.213,,,comparison only,False
+ica_p1_height,Inside target test (comparison),0.9346,0.9912,1.0,1.2394,0.9346,,,comparison only,False
+ica_p1_V,Inside target test (comparison),0.3159,0.8949,0.7333,0.9678,0.3159,,,comparison only,False
+ica_p2_height,Inside target test (comparison),0.8154,0.9688,0.9333,1.0097,0.8154,,,comparison only,False
+ica_p2_V,Inside target test (comparison),0.5247,0.7693,0.9333,0.3861,0.5247,,,comparison only,False
+ica_p3_height,Inside target test (comparison),0.7891,0.9831,0.9333,1.056,0.7891,,,comparison only,False
+ica_p3_V,Inside target test (comparison),0.7147,0.7737,1.0,0.5397,0.7147,,,comparison only,False
+dis1C_Tstart,Inside target test (comparison),-0.0348,0.004,0.5333,0.1999,0.0348,,,comparison only,False
+rtp_T_mean,Inside target test (comparison),-0.0294,0.0727,0.5333,0.1594,0.0294,,,comparison only,False
+chg_CC_V0,Inside target test (comparison),-0.856,-0.861,1.0,1.049,0.856,,,comparison only,False
+chg_CV_time_s,Inside target test (comparison),-0.3483,-0.8058,0.9333,0.482,0.3483,,,comparison only,False

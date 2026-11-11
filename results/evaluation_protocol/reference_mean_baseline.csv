@@ -1,0 +1,4 @@
+model,scheme,n,MAE,RMSE,R2,MaxAE
+Mean baseline,LOCO,306,8.177,11.432,-0.061,55.655
+Mean baseline,LOPO,306,8.236,11.464,-0.067,55.655
+Mean baseline,Random 5-fold,306,7.894,11.142,-0.008,55.458
