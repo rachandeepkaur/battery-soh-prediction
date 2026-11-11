@@ -1,0 +1,61 @@
+feature_set,model,regime,MAE,n_rows,n_cells,n_profiles
+Comparison (with capacity measures),Gradient boosting,extrapolation,2.820919550778729,66,4,4
+Comparison (with capacity measures),Gradient boosting,interpolation,1.5255156985684042,219,10,9
+Comparison (with capacity measures),Gradient boosting,unclassified,1.998788676571559,21,1,1
+Comparison (with capacity measures),Mean baseline,extrapolation,13.865235855595463,66,4,4
+Comparison (with capacity measures),Mean baseline,interpolation,6.32884762493569,219,10,9
+Comparison (with capacity measures),Mean baseline,unclassified,10.433290939068995,21,1,1
+Comparison (with capacity measures),Random forest,extrapolation,2.5321292520804706,66,4,4
+Comparison (with capacity measures),Random forest,interpolation,1.166875559899412,219,10,9
+Comparison (with capacity measures),Random forest,unclassified,1.6419630367315456,21,1,1
+Comparison (with capacity measures),Ridge,extrapolation,2.129504848788042,66,4,4
+Comparison (with capacity measures),Ridge,interpolation,0.8870280776375737,219,10,9
+Comparison (with capacity measures),Ridge,unclassified,0.2705879412932693,21,1,1
+Comparison (with capacity measures),SVR (RBF),extrapolation,10.71163348684039,66,4,4
+Comparison (with capacity measures),SVR (RBF),interpolation,4.41802265872131,219,10,9
+Comparison (with capacity measures),SVR (RBF),unclassified,2.911233529805531,21,1,1
+Comparison (with same-test features),Gradient boosting,extrapolation,2.782637244603173,66,4,4
+Comparison (with same-test features),Gradient boosting,interpolation,1.2257447612201473,219,10,9
+Comparison (with same-test features),Gradient boosting,unclassified,3.168241852287795,21,1,1
+Comparison (with same-test features),Mean baseline,extrapolation,13.865235855595463,66,4,4
+Comparison (with same-test features),Mean baseline,interpolation,6.32884762493569,219,10,9
+Comparison (with same-test features),Mean baseline,unclassified,10.433290939068995,21,1,1
+Comparison (with same-test features),Random forest,extrapolation,2.577320309642257,66,4,4
+Comparison (with same-test features),Random forest,interpolation,1.2227835266554807,219,10,9
+Comparison (with same-test features),Random forest,unclassified,3.1203726341008555,21,1,1
+Comparison (with same-test features),Ridge,extrapolation,3.3864927087700654,66,4,4
+Comparison (with same-test features),Ridge,interpolation,1.231015711112642,219,10,9
+Comparison (with same-test features),Ridge,unclassified,0.38896945445219716,21,1,1
+Comparison (with same-test features),SVR (RBF),extrapolation,9.626317055917285,66,4,4
+Comparison (with same-test features),SVR (RBF),interpolation,4.37815093220865,219,10,9
+Comparison (with same-test features),SVR (RBF),unclassified,2.121052724342072,21,1,1
+Cycle count only,Gradient boosting,extrapolation,16.1544987785617,66,4,4
+Cycle count only,Gradient boosting,interpolation,8.354798581365534,219,10,9
+Cycle count only,Gradient boosting,unclassified,7.025540353504976,21,1,1
+Cycle count only,Mean baseline,extrapolation,13.865235855595463,66,4,4
+Cycle count only,Mean baseline,interpolation,6.32884762493569,219,10,9
+Cycle count only,Mean baseline,unclassified,10.433290939068995,21,1,1
+Cycle count only,Random forest,extrapolation,15.330965909211644,66,4,4
+Cycle count only,Random forest,interpolation,8.447019636487338,219,10,9
+Cycle count only,Random forest,unclassified,7.759242633367351,21,1,1
+Cycle count only,Ridge,extrapolation,13.893293663347578,66,4,4
+Cycle count only,Ridge,interpolation,9.338494233281125,219,10,9
+Cycle count only,Ridge,unclassified,10.111111745311993,21,1,1
+Cycle count only,SVR (RBF),extrapolation,14.831617345696163,66,4,4
+Cycle count only,SVR (RBF),interpolation,7.622971607552098,219,10,9
+Cycle count only,SVR (RBF),unclassified,9.280038601533978,21,1,1
+Main (no capacity measures),Gradient boosting,extrapolation,3.4259134051095947,66,4,4
+Main (no capacity measures),Gradient boosting,interpolation,1.7003722323418637,219,10,9
+Main (no capacity measures),Gradient boosting,unclassified,2.215378917783867,21,1,1
+Main (no capacity measures),Mean baseline,extrapolation,13.865235855595463,66,4,4
+Main (no capacity measures),Mean baseline,interpolation,6.32884762493569,219,10,9
+Main (no capacity measures),Mean baseline,unclassified,10.433290939068995,21,1,1
+Main (no capacity measures),Random forest,extrapolation,5.200248833015464,66,4,4
+Main (no capacity measures),Random forest,interpolation,1.6045692741040198,219,10,9
+Main (no capacity measures),Random forest,unclassified,2.1798538423727867,21,1,1
+Main (no capacity measures),Ridge,extrapolation,4.213756068498567,66,4,4
+Main (no capacity measures),Ridge,interpolation,2.335568594553174,219,10,9
+Main (no capacity measures),Ridge,unclassified,3.141356379579135,21,1,1
+Main (no capacity measures),SVR (RBF),extrapolation,12.064419645627265,66,4,4
+Main (no capacity measures),SVR (RBF),interpolation,4.638235465419981,219,10,9
+Main (no capacity measures),SVR (RBF),unclassified,4.282067632990916,21,1,1

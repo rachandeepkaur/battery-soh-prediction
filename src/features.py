@@ -61,8 +61,16 @@ def read_info(f: h5py.File) -> pd.DataFrame:
     for c in ["idcell", "expname", "schedulefilename"]:
         info[c] = info[c].map(_decode)
     info["group"] = info["idtest"].map(lambda i: f"test_{i:04d}")
-    info = info[info["group"].isin(f["tests"].keys())]
-    return info.sort_values("startdatetime").reset_index(drop=True)
+    info = info[info["group"].isin(f["tests"].keys())].copy()
+
+    last_times = []
+    for g in info["group"]:
+        tt = f["tests"][g]["test_time"]
+        last_times.append(tt[tt.shape[0] - 1])
+    info["end"] = info["startdatetime"] + np.array(last_times, dtype=float) / 86400
+
+    return info.sort_values(["startdatetime", "end"]).reset_index(drop=True)
+
 
 
 def load_test(g: h5py.Group) -> dict[str, np.ndarray]:

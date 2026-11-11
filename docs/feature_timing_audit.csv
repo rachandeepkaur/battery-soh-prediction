@@ -1,0 +1,76 @@
+feature,timing_group
+cell_id,"not a feature (identifier, target or test setting)"
+profile,"not a feature (identifier, target or test setting)"
+idtest,"not a feature (identifier, target or test setting)"
+expname,"not a feature (identifier, target or test setting)"
+rtp_T_set,"not a feature (identifier, target or test setting)"
+schedule,"not a feature (identifier, target or test setting)"
+days_since_start,before this RTP (usage history / profile)
+cum_dis_Ah,before this RTP (usage history / profile)
+cum_chg_Ah,before this RTP (usage history / profile)
+cum_lp_days,before this RTP (usage history / profile)
+cum_lp_Tdays,before this RTP (usage history / profile)
+cum_EFC,before this RTP (usage history / profile)
+cum_lp_T_mean,before this RTP (usage history / profile)
+cap_1C_Ah,target or direct part of target (excluded)
+cap_1C_spread_Ah,target or direct part of target (excluded)
+dis1C_energy_Wh,target or direct part of target (excluded)
+dis1C_meanV,inside the target 1C discharge or its rest (comparison only)
+dis1C_dT,inside the target 1C discharge or its rest (comparison only)
+dis1C_Tstart,inside the target 1C discharge or its rest (comparison only)
+dis1C_IRdrop_ohm,inside the target 1C discharge or its rest (comparison only)
+dis1C_Q_3.8_3.5V,inside the target 1C discharge or its rest (comparison only)
+dis1C_t_to_3.6V_s,inside the target 1C discharge or its rest (comparison only)
+relax_dV_after_dis,inside the target 1C discharge or its rest (comparison only)
+ica_area_3.4_3.8V,inside the target 1C discharge or its rest (comparison only)
+ica_p1_height,inside the target 1C discharge or its rest (comparison only)
+ica_p1_V,inside the target 1C discharge or its rest (comparison only)
+ica_p2_height,inside the target 1C discharge or its rest (comparison only)
+ica_p2_V,inside the target 1C discharge or its rest (comparison only)
+ica_p3_height,inside the target 1C discharge or its rest (comparison only)
+ica_p3_V,inside the target 1C discharge or its rest (comparison only)
+dis_C3_CC_Ah,"in this RTP, outside the target discharge"
+R_1p35C_10s_mean,"in this RTP, outside the target discharge"
+R_1p35C_inst_mean,"in this RTP, outside the target discharge"
+R_1p35C_n,"in this RTP, outside the target discharge"
+R_1p35C_10s_soc55,"in this RTP, outside the target discharge"
+R_1p35C_10s_lowSOC,"in this RTP, outside the target discharge"
+R_1p13C_10s_mean,"in this RTP, outside the target discharge"
+R_1p13C_inst_mean,"in this RTP, outside the target discharge"
+R_1p13C_n,"in this RTP, outside the target discharge"
+R_1p13C_10s_soc55,"in this RTP, outside the target discharge"
+R_1p13C_10s_lowSOC,"in this RTP, outside the target discharge"
+R_0p18C_10s_mean,"in this RTP, outside the target discharge"
+R_0p18C_inst_mean,"in this RTP, outside the target discharge"
+R_0p18C_n,"in this RTP, outside the target discharge"
+R_0p18C_10s_soc55,"in this RTP, outside the target discharge"
+R_0p18C_10s_lowSOC,"in this RTP, outside the target discharge"
+rtp_T_mean,inside the target 1C discharge or its rest (comparison only)
+chg_CC_time_s,"in this RTP, outside the target discharge"
+chg_CC_Ah,"in this RTP, outside the target discharge"
+chg_CC_V0,"in this RTP, outside the target discharge"
+chg_CV_Ah,"in this RTP, outside the target discharge"
+chg_CV_time_s,"in this RTP, outside the target discharge"
+chg_CC_fraction,"in this RTP, outside the target discharge"
+prev_lp_days,before this RTP (usage history / profile)
+prev_lp_dis_Ah,before this RTP (usage history / profile)
+prev_lp_chg_Ah,before this RTP (usage history / profile)
+prev_lp_T_mean,before this RTP (usage history / profile)
+prev_lp_T_max,before this RTP (usage history / profile)
+prev_lp_V_mean,before this RTP (usage history / profile)
+prev_lp_V_max,before this RTP (usage history / profile)
+prev_lp_V_min,before this RTP (usage history / profile)
+prev_lp_I_dis_mean,before this RTP (usage history / profile)
+prev_lp_I_chg_mean,before this RTP (usage history / profile)
+prev_lp_I_dis_peak,before this RTP (usage history / profile)
+prev_lp_rest_frac,before this RTP (usage history / profile)
+lp_T_set,before this RTP (usage history / profile)
+lp_CC,before this RTP (usage history / profile)
+lp_ADC,before this RTP (usage history / profile)
+lp_PDC,before this RTP (usage history / profile)
+lp_F,before this RTP (usage history / profile)
+lp_SoC,before this RTP (usage history / profile)
+lp_dSoC,before this RTP (usage history / profile)
+cap_ref_Ah,target or direct part of target (excluded)
+SOH,"not a feature (identifier, target or test setting)"
+rtp_index,before this RTP (usage history / profile)

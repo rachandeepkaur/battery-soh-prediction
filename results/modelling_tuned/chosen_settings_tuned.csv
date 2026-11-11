@@ -1,0 +1,103 @@
+split,fold,model,inner_MAE,p_C,p_gamma,p_epsilon,p_max_features,p_min_samples_leaf,p_learning_rate,p_max_leaf_nodes
+Random split,0,"SVR (RBF, tuned)",0.8551692672151594,100.0,0.01,0.05,,,,
+Random split,0,Random forest (tuned),1.223728333917343,,,,0.5,1.0,,
+Random split,0,Gradient boosting (tuned),1.3569029579623584,,,,,,0.1,7.0
+Random split,1,"SVR (RBF, tuned)",0.8054319422293338,100.0,0.01,0.05,,,,
+Random split,1,Random forest (tuned),1.2438415944440089,,,,0.5,1.0,,
+Random split,1,Gradient boosting (tuned),1.3291982891159346,,,,,,0.1,15.0
+Random split,2,"SVR (RBF, tuned)",0.8474530660303795,100.0,0.01,0.05,,,,
+Random split,2,Random forest (tuned),1.1383525410968154,,,,0.5,1.0,,
+Random split,2,Gradient boosting (tuned),1.2013638766267978,,,,,,0.1,15.0
+Random split,3,"SVR (RBF, tuned)",0.8360357254238171,100.0,0.01,0.05,,,,
+Random split,3,Random forest (tuned),1.1175885883259542,,,,0.5,1.0,,
+Random split,3,Gradient boosting (tuned),1.2605185820118248,,,,,,0.03,15.0
+Random split,4,"SVR (RBF, tuned)",0.9054511671971595,100.0,0.01,0.05,,,,
+Random split,4,Random forest (tuned),1.2083906397388975,,,,0.5,1.0,,
+Random split,4,Gradient boosting (tuned),1.3750841775801979,,,,,,0.1,15.0
+Leave-cell-out,0,"SVR (RBF, tuned)",3.9414590200015214,10.0,0.01,0.05,,,,
+Leave-cell-out,0,Random forest (tuned),1.906939880711742,,,,1.0,3.0,,
+Leave-cell-out,0,Gradient boosting (tuned),2.01749274330136,,,,,,0.03,7.0
+Leave-cell-out,1,"SVR (RBF, tuned)",3.579395179571839,100.0,0.01,0.05,,,,
+Leave-cell-out,1,Random forest (tuned),1.8383235985525623,,,,0.5,1.0,,
+Leave-cell-out,1,Gradient boosting (tuned),2.5274499928304612,,,,,,0.03,15.0
+Leave-cell-out,2,"SVR (RBF, tuned)",2.807496544756426,10.0,0.01,0.05,,,,
+Leave-cell-out,2,Random forest (tuned),1.910851729422405,,,,1.0,1.0,,
+Leave-cell-out,2,Gradient boosting (tuned),2.2371348064042094,,,,,,0.03,15.0
+Leave-cell-out,3,"SVR (RBF, tuned)",3.677923736471288,10.0,0.01,0.05,,,,
+Leave-cell-out,3,Random forest (tuned),2.0162670422675646,,,,1.0,1.0,,
+Leave-cell-out,3,Gradient boosting (tuned),2.07381402064463,,,,,,0.03,7.0
+Leave-cell-out,4,"SVR (RBF, tuned)",2.5487117896577915,10.0,0.01,0.05,,,,
+Leave-cell-out,4,Random forest (tuned),2.0797140976485435,,,,1.0,1.0,,
+Leave-cell-out,4,Gradient boosting (tuned),2.078040407040304,,,,,,0.03,7.0
+Leave-cell-out,5,"SVR (RBF, tuned)",3.5249441204768024,1.0,0.01,0.05,,,,
+Leave-cell-out,5,Random forest (tuned),1.8173033714765132,,,,1.0,1.0,,
+Leave-cell-out,5,Gradient boosting (tuned),1.8575251997473878,,,,,,0.03,7.0
+Leave-cell-out,6,"SVR (RBF, tuned)",3.4514016841727098,10.0,0.01,0.05,,,,
+Leave-cell-out,6,Random forest (tuned),1.9914743009592297,,,,1.0,1.0,,
+Leave-cell-out,6,Gradient boosting (tuned),2.2075837955852786,,,,,,0.03,7.0
+Leave-cell-out,7,"SVR (RBF, tuned)",3.54658745107188,10.0,0.01,0.05,,,,
+Leave-cell-out,7,Random forest (tuned),1.759848402881071,,,,1.0,3.0,,
+Leave-cell-out,7,Gradient boosting (tuned),1.9616692990930005,,,,,,0.03,7.0
+Leave-cell-out,8,"SVR (RBF, tuned)",3.467286669915265,10.0,0.01,0.05,,,,
+Leave-cell-out,8,Random forest (tuned),1.8999449664316235,,,,1.0,1.0,,
+Leave-cell-out,8,Gradient boosting (tuned),1.8841503256145251,,,,,,0.03,7.0
+Leave-cell-out,9,"SVR (RBF, tuned)",3.0426960794074676,10.0,0.01,0.05,,,,
+Leave-cell-out,9,Random forest (tuned),1.9373612663402746,,,,1.0,1.0,,
+Leave-cell-out,9,Gradient boosting (tuned),1.994963584625109,,,,,,0.03,7.0
+Leave-cell-out,10,"SVR (RBF, tuned)",3.130354889648855,10.0,0.01,0.05,,,,
+Leave-cell-out,10,Random forest (tuned),2.1162775667404783,,,,1.0,1.0,,
+Leave-cell-out,10,Gradient boosting (tuned),1.9247257304465404,,,,,,0.03,7.0
+Leave-cell-out,11,"SVR (RBF, tuned)",3.3446879257034383,10.0,0.01,0.05,,,,
+Leave-cell-out,11,Random forest (tuned),1.9647720777605007,,,,1.0,3.0,,
+Leave-cell-out,11,Gradient boosting (tuned),1.964919890284311,,,,,,0.1,7.0
+Leave-cell-out,12,"SVR (RBF, tuned)",3.524363390821391,10.0,0.01,0.05,,,,
+Leave-cell-out,12,Random forest (tuned),1.9480978842776302,,,,1.0,1.0,,
+Leave-cell-out,12,Gradient boosting (tuned),1.9534960682943585,,,,,,0.03,7.0
+Leave-cell-out,13,"SVR (RBF, tuned)",3.2597813706653427,10.0,0.01,0.05,,,,
+Leave-cell-out,13,Random forest (tuned),1.9238467845992013,,,,1.0,1.0,,
+Leave-cell-out,13,Gradient boosting (tuned),1.9767883506664936,,,,,,0.03,7.0
+Leave-cell-out,14,"SVR (RBF, tuned)",3.3875561498480296,10.0,0.01,0.05,,,,
+Leave-cell-out,14,Random forest (tuned),1.8733172803851523,,,,1.0,1.0,,
+Leave-cell-out,14,Gradient boosting (tuned),2.07657788202227,,,,,,0.03,7.0
+Leave-profile-out,0,"SVR (RBF, tuned)",3.4892045724472767,10.0,0.01,0.05,,,,
+Leave-profile-out,0,Random forest (tuned),1.787263670232899,,,,0.5,1.0,,
+Leave-profile-out,0,Gradient boosting (tuned),2.6272456678283085,,,,,,0.03,15.0
+Leave-profile-out,1,"SVR (RBF, tuned)",3.7342185622553155,10.0,0.01,0.05,,,,
+Leave-profile-out,1,Random forest (tuned),1.7157018978086522,,,,1.0,1.0,,
+Leave-profile-out,1,Gradient boosting (tuned),1.94201697624677,,,,,,0.03,15.0
+Leave-profile-out,2,"SVR (RBF, tuned)",4.5608721256055675,1.0,0.01,0.05,,,,
+Leave-profile-out,2,Random forest (tuned),2.6044823230416188,,,,1.0,1.0,,
+Leave-profile-out,2,Gradient boosting (tuned),2.4024588776251306,,,,,,0.03,15.0
+Leave-profile-out,3,"SVR (RBF, tuned)",3.846305945237455,10.0,0.01,0.05,,,,
+Leave-profile-out,3,Random forest (tuned),1.869787690478653,,,,0.5,1.0,,
+Leave-profile-out,3,Gradient boosting (tuned),2.566701228992148,,,,,,0.03,7.0
+Leave-profile-out,4,"SVR (RBF, tuned)",4.162516682989475,10.0,0.01,0.05,,,,
+Leave-profile-out,4,Random forest (tuned),1.7533869917589313,,,,0.5,1.0,,
+Leave-profile-out,4,Gradient boosting (tuned),2.4734081933815695,,,,,,0.03,15.0
+Leave-profile-out,5,"SVR (RBF, tuned)",4.347259254499465,10.0,0.01,0.05,,,,
+Leave-profile-out,5,Random forest (tuned),1.7016259952314474,,,,1.0,1.0,,
+Leave-profile-out,5,Gradient boosting (tuned),1.9961467760275196,,,,,,0.03,15.0
+Leave-profile-out,6,"SVR (RBF, tuned)",2.9832666023922023,10.0,0.01,0.05,,,,
+Leave-profile-out,6,Random forest (tuned),1.6861464978972305,,,,1.0,1.0,,
+Leave-profile-out,6,Gradient boosting (tuned),2.397441619666571,,,,,,0.03,15.0
+Leave-profile-out,7,"SVR (RBF, tuned)",3.8565808161544113,100.0,0.01,0.05,,,,
+Leave-profile-out,7,Random forest (tuned),1.6733608097467427,,,,1.0,1.0,,
+Leave-profile-out,7,Gradient boosting (tuned),2.189022672761417,,,,,,0.03,7.0
+Leave-profile-out,8,"SVR (RBF, tuned)",4.473552525899012,10.0,0.01,0.05,,,,
+Leave-profile-out,8,Random forest (tuned),2.0723581048426807,,,,1.0,1.0,,
+Leave-profile-out,8,Gradient boosting (tuned),2.745402380809013,,,,,,0.03,7.0
+Leave-profile-out,9,"SVR (RBF, tuned)",4.234528278071802,10.0,0.01,0.05,,,,
+Leave-profile-out,9,Random forest (tuned),1.9123685192958433,,,,1.0,1.0,,
+Leave-profile-out,9,Gradient boosting (tuned),2.5304410858976474,,,,,,0.03,15.0
+Leave-profile-out,10,"SVR (RBF, tuned)",3.9474304793184354,100.0,0.01,0.05,,,,
+Leave-profile-out,10,Random forest (tuned),2.2505543747174017,,,,1.0,3.0,,
+Leave-profile-out,10,Gradient boosting (tuned),2.402818041053771,,,,,,0.03,7.0
+Leave-profile-out,11,"SVR (RBF, tuned)",3.9994932526992955,10.0,0.01,0.05,,,,
+Leave-profile-out,11,Random forest (tuned),1.8400809678137897,,,,1.0,1.0,,
+Leave-profile-out,11,Gradient boosting (tuned),1.9652474580077695,,,,,,0.03,15.0
+Leave-profile-out,12,"SVR (RBF, tuned)",4.547974861256343,100.0,0.01,0.05,,,,
+Leave-profile-out,12,Random forest (tuned),2.089672778051264,,,,1.0,1.0,,
+Leave-profile-out,12,Gradient boosting (tuned),2.438971018979744,,,,,,0.03,7.0
+Leave-profile-out,13,"SVR (RBF, tuned)",4.3209610321861796,10.0,0.01,0.05,,,,
+Leave-profile-out,13,Random forest (tuned),1.8077955626302213,,,,1.0,3.0,,
+Leave-profile-out,13,Gradient boosting (tuned),2.10224934833949,,,,,,0.03,7.0

@@ -1,0 +1,13 @@
+feature_set,model,regime,MAE,n_rows,n_cells
+Main (no capacity measures),Gradient boosting (tuned),extrapolation,3.381300709782969,66,4
+Main (no capacity measures),Gradient boosting (tuned),interpolation,1.6189113314192418,219,10
+Main (no capacity measures),Gradient boosting (tuned),unclassified,2.2692777887435445,21,1
+Main (no capacity measures),Multiple linear regression,extrapolation,4.603868155491492,66,4
+Main (no capacity measures),Multiple linear regression,interpolation,3.0338413695908306,219,10
+Main (no capacity measures),Multiple linear regression,unclassified,1.6662774712589232,21,1
+Main (no capacity measures),Random forest (tuned),extrapolation,3.111564114525306,66,4
+Main (no capacity measures),Random forest (tuned),interpolation,1.7277005033440802,219,10
+Main (no capacity measures),Random forest (tuned),unclassified,2.5210843345483687,21,1
+Main (no capacity measures),"SVR (RBF, tuned)",extrapolation,9.207247332037383,66,4
+Main (no capacity measures),"SVR (RBF, tuned)",interpolation,3.518473374772311,219,10
+Main (no capacity measures),"SVR (RBF, tuned)",unclassified,3.1684436171522323,21,1
