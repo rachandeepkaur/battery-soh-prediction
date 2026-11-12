@@ -1,0 +1,10 @@
+a,b,scheme,n_folds,mean_diff,a_wins,b_wins,wilcoxon_p
+One feature: cum_EFC,Mean SOH (training cells),LOCO,15,0.36567672048395783,11,4,0.359130859375
+One feature: days_since_start,Mean SOH (training cells),LOCO,15,-0.6890065484854547,7,8,0.389404296875
+MLR (pruned main set),Mean SOH (training cells),LOCO,15,-2.236791717678637,11,4,0.05535888671875
+Ridge (tuned),Mean SOH (training cells),LOCO,15,-3.810447654031622,13,2,0.00537109375
+Lasso (tuned),Mean SOH (training cells),LOCO,15,-3.88660743782678,14,1,0.0042724609375
+ElasticNet (tuned),Mean SOH (training cells),LOCO,15,-4.26536448826435,14,1,0.00201416015625
+Ridge (tuned),MLR (pruned main set),LOCO,15,-1.5736559363529847,9,6,0.1353759765625
+Lasso (tuned),Ridge (tuned),LOCO,15,-0.07615978379515859,9,6,0.48870849609375
+ElasticNet (tuned),Ridge (tuned),LOCO,15,-0.4549168342327282,10,5,0.02557373046875

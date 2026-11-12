@@ -1,0 +1,41 @@
+model,kind,feature,folds_kept,share_negative,share_zero,median_coef
+ElasticNet (tuned),resistance,R_0p18C_10s_mean,14/15,1.0,0.0,-1.8991867523944648
+ElasticNet (tuned),resistance,R_0p18C_inst_mean,2/15,1.0,0.0,-2.7533578646215506
+ElasticNet (tuned),resistance,R_1p13C_inst_mean,1/15,1.0,0.0,-6.096020963039605
+ElasticNet (tuned),resistance,R_1p35C_10s_mean,1/15,1.0,0.0,-7.192291590259899
+ElasticNet (tuned),resistance,R_1p35C_inst_mean,7/15,1.0,0.0,-6.043034010259128
+ElasticNet (tuned),usage,cum_chg_Ah,15/15,0.13333333333333333,0.8666666666666667,-0.0
+ElasticNet (tuned),usage,cum_lp_Tdays,15/15,0.0,0.8666666666666667,-0.0
+ElasticNet (tuned),usage,cum_lp_days,15/15,0.06666666666666667,0.8666666666666667,0.0
+ElasticNet (tuned),usage,days_since_start,13/15,1.0,0.0,-0.6233232515797129
+ElasticNet (tuned),usage,rtp_index,2/15,1.0,0.0,-1.4416327146949763
+Lasso (tuned),resistance,R_0p18C_10s_mean,14/15,0.42857142857142855,0.5714285714285714,-0.0
+Lasso (tuned),resistance,R_0p18C_inst_mean,2/15,1.0,0.0,-0.6507128083681214
+Lasso (tuned),resistance,R_1p13C_inst_mean,1/15,1.0,0.0,-9.123532683283246
+Lasso (tuned),resistance,R_1p35C_10s_mean,1/15,1.0,0.0,-9.135931939055718
+Lasso (tuned),resistance,R_1p35C_inst_mean,7/15,1.0,0.0,-8.818210414181326
+Lasso (tuned),usage,cum_chg_Ah,15/15,0.0,1.0,0.0
+Lasso (tuned),usage,cum_lp_Tdays,15/15,0.0,0.9333333333333333,0.0
+Lasso (tuned),usage,cum_lp_days,15/15,0.0,1.0,0.0
+Lasso (tuned),usage,days_since_start,13/15,0.3076923076923077,0.6923076923076923,-0.0
+Lasso (tuned),usage,rtp_index,2/15,0.5,0.5,-0.008480539482097284
+MLR (pruned main set),resistance,R_0p18C_10s_mean,14/15,0.42857142857142855,0.0,0.4650465568580643
+MLR (pruned main set),resistance,R_0p18C_inst_mean,2/15,0.0,0.0,2.0189893829722867
+MLR (pruned main set),resistance,R_1p13C_inst_mean,1/15,1.0,0.0,-11.221058698758169
+MLR (pruned main set),resistance,R_1p35C_10s_mean,1/15,1.0,0.0,-13.912234829785461
+MLR (pruned main set),resistance,R_1p35C_inst_mean,7/15,1.0,0.0,-11.625424824023499
+MLR (pruned main set),usage,cum_chg_Ah,15/15,0.26666666666666666,0.0,0.3095342261704155
+MLR (pruned main set),usage,cum_lp_Tdays,15/15,0.0,0.0,2.037155701870944
+MLR (pruned main set),usage,cum_lp_days,15/15,0.06666666666666667,0.0,1.582677778733532
+MLR (pruned main set),usage,days_since_start,13/15,1.0,0.0,-2.429242868154955
+MLR (pruned main set),usage,rtp_index,2/15,1.0,0.0,-3.1505409633491177
+Ridge (tuned),resistance,R_0p18C_10s_mean,14/15,1.0,0.0,-2.061998317692323
+Ridge (tuned),resistance,R_0p18C_inst_mean,2/15,1.0,0.0,-2.1009817013766217
+Ridge (tuned),resistance,R_1p13C_inst_mean,1/15,1.0,0.0,-4.325530222189455
+Ridge (tuned),resistance,R_1p35C_10s_mean,1/15,1.0,0.0,-5.137297873843216
+Ridge (tuned),resistance,R_1p35C_inst_mean,7/15,1.0,0.0,-4.393920536750141
+Ridge (tuned),usage,cum_chg_Ah,15/15,0.8,0.0,-0.3231301385284447
+Ridge (tuned),usage,cum_lp_Tdays,15/15,0.2,0.0,0.22105182834181
+Ridge (tuned),usage,cum_lp_days,15/15,0.2,0.0,0.16382894023482603
+Ridge (tuned),usage,days_since_start,13/15,1.0,0.0,-2.0613333556161746
+Ridge (tuned),usage,rtp_index,2/15,1.0,0.0,-1.343375575576069

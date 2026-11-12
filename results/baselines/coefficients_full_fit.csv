@@ -1,0 +1,103 @@
+model,settings,feature,kind,std_coef,expected,sign_ok
+One feature: cum_EFC,{},cum_EFC,usage,-3.228888911083474,negative,yes
+One feature: days_since_start,{},days_since_start,usage,-5.220953292897219,negative,yes
+MLR (pruned main set),{},days_since_start,usage,-2.4343112005,negative,yes
+MLR (pruned main set),{},cum_chg_Ah,usage,0.4153393681451665,negative,NO
+MLR (pruned main set),{},cum_lp_days,usage,1.404860396383451,negative,NO
+MLR (pruned main set),{},cum_lp_Tdays,usage,2.3745991786943454,negative,NO
+MLR (pruned main set),{},R_1p35C_inst_mean,resistance,-11.182362230921171,negative,yes
+MLR (pruned main set),{},R_1p35C_n,other,-0.16548024087294028,,
+MLR (pruned main set),{},R_0p18C_10s_mean,resistance,1.4143760132496335,negative,NO
+MLR (pruned main set),{},R_0p18C_n,other,0.0,,
+MLR (pruned main set),{},prev_lp_days,other,0.9662265829623131,,
+MLR (pruned main set),{},prev_lp_dis_Ah,other,-1.0030679119168786,,
+MLR (pruned main set),{},prev_lp_T_mean,other,-1.2789225225742644,,
+MLR (pruned main set),{},prev_lp_T_max,other,1.8861378436736906,,
+MLR (pruned main set),{},prev_lp_V_mean,other,4.556362353988401,,
+MLR (pruned main set),{},prev_lp_V_max,other,0.030166365322522294,,
+MLR (pruned main set),{},prev_lp_V_min,other,-0.6870536048552423,,
+MLR (pruned main set),{},prev_lp_I_chg_mean,other,0.3180614013598877,,
+MLR (pruned main set),{},prev_lp_I_dis_peak,other,2.90704422350033,,
+MLR (pruned main set),{},prev_lp_rest_frac,other,0.743430384517482,,
+MLR (pruned main set),{},lp_CC,other,-1.4803084281075087,,
+MLR (pruned main set),{},lp_ADC,other,-0.43435520725319277,,
+MLR (pruned main set),{},lp_PDC,other,1.589168181823474,,
+MLR (pruned main set),{},lp_F,other,0.12113767524858016,,
+MLR (pruned main set),{},lp_SoC,other,-4.2442088229763,,
+MLR (pruned main set),{},lp_dSoC,other,-0.19138400556257346,,
+MLR (pruned main set),{},schedule_RTP_highCurrent,other,-6.170437786743822,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},days_since_start,usage,-2.0968362175805533,negative,yes
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},cum_chg_Ah,usage,-0.06557339055348618,negative,yes
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},cum_lp_days,usage,0.8853258000995735,negative,NO
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},cum_lp_Tdays,usage,0.8004902914014574,negative,NO
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},R_1p35C_inst_mean,resistance,-6.283792990782239,negative,yes
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},R_1p35C_n,other,-0.06592021131493371,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},R_0p18C_10s_mean,resistance,-1.514498477893438,negative,yes
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},R_0p18C_n,other,0.0,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},prev_lp_days,other,0.5267751313657434,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},prev_lp_dis_Ah,other,-0.0016312534456116388,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},prev_lp_T_mean,other,-0.45158240601751864,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},prev_lp_T_max,other,-0.005684410662558215,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},prev_lp_V_mean,other,1.0874855596797743,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},prev_lp_V_max,other,0.43380999089293676,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},prev_lp_V_min,other,0.5740429838395549,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},prev_lp_I_chg_mean,other,-0.7892388303966051,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},prev_lp_I_dis_peak,other,1.7990878459045905,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},prev_lp_rest_frac,other,-0.128624788364053,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},lp_CC,other,-1.5872771970153325,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},lp_ADC,other,0.19404985678735442,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},lp_PDC,other,0.11687965889080451,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},lp_F,other,-0.2580106306919106,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},lp_SoC,other,-2.471027638364752,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},lp_dSoC,other,0.4841447993558363,,
+Ridge (tuned),{'alpha': np.float64(31.622776601683793)},schedule_RTP_highCurrent,other,-0.14845179978482687,,
+Lasso (tuned),{'alpha': np.float64(0.1)},days_since_start,usage,-1.600560974559574,negative,yes
+Lasso (tuned),{'alpha': np.float64(0.1)},cum_chg_Ah,usage,0.0,negative,zeroed
+Lasso (tuned),{'alpha': np.float64(0.1)},cum_lp_days,usage,1.0965366661920641,negative,NO
+Lasso (tuned),{'alpha': np.float64(0.1)},cum_lp_Tdays,usage,1.6970714063716048,negative,NO
+Lasso (tuned),{'alpha': np.float64(0.1)},R_1p35C_inst_mean,resistance,-9.892931668931118,negative,yes
+Lasso (tuned),{'alpha': np.float64(0.1)},R_1p35C_n,other,-0.04978895479789315,,
+Lasso (tuned),{'alpha': np.float64(0.1)},R_0p18C_10s_mean,resistance,0.011334676049418289,negative,NO
+Lasso (tuned),{'alpha': np.float64(0.1)},R_0p18C_n,other,0.0,,
+Lasso (tuned),{'alpha': np.float64(0.1)},prev_lp_days,other,0.5146644210054032,,
+Lasso (tuned),{'alpha': np.float64(0.1)},prev_lp_dis_Ah,other,-0.0,,
+Lasso (tuned),{'alpha': np.float64(0.1)},prev_lp_T_mean,other,-0.0,,
+Lasso (tuned),{'alpha': np.float64(0.1)},prev_lp_T_max,other,0.0,,
+Lasso (tuned),{'alpha': np.float64(0.1)},prev_lp_V_mean,other,2.733796200262748,,
+Lasso (tuned),{'alpha': np.float64(0.1)},prev_lp_V_max,other,0.0,,
+Lasso (tuned),{'alpha': np.float64(0.1)},prev_lp_V_min,other,-0.09198028511200176,,
+Lasso (tuned),{'alpha': np.float64(0.1)},prev_lp_I_chg_mean,other,-0.18155491924782083,,
+Lasso (tuned),{'alpha': np.float64(0.1)},prev_lp_I_dis_peak,other,1.1718984367474126,,
+Lasso (tuned),{'alpha': np.float64(0.1)},prev_lp_rest_frac,other,-0.1270273177546067,,
+Lasso (tuned),{'alpha': np.float64(0.1)},lp_CC,other,-1.259363822545277,,
+Lasso (tuned),{'alpha': np.float64(0.1)},lp_ADC,other,0.0,,
+Lasso (tuned),{'alpha': np.float64(0.1)},lp_PDC,other,0.0,,
+Lasso (tuned),{'alpha': np.float64(0.1)},lp_F,other,0.0,,
+Lasso (tuned),{'alpha': np.float64(0.1)},lp_SoC,other,-3.1499655149194163,,
+Lasso (tuned),{'alpha': np.float64(0.1)},lp_dSoC,other,0.5594715146369259,,
+Lasso (tuned),{'alpha': np.float64(0.1)},schedule_RTP_highCurrent,other,-0.0,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",days_since_start,usage,-1.8357574894836846,negative,yes
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",cum_chg_Ah,usage,0.0,negative,zeroed
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",cum_lp_days,usage,1.2014960983430716,negative,NO
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",cum_lp_Tdays,usage,1.2868625159604048,negative,NO
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",R_1p35C_inst_mean,resistance,-9.20150564175941,negative,yes
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",R_1p35C_n,other,-0.008876982836029166,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",R_0p18C_10s_mean,resistance,-0.0,negative,zeroed
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",R_0p18C_n,other,0.0,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",prev_lp_days,other,0.5496407550093395,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",prev_lp_dis_Ah,other,-0.0,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",prev_lp_T_mean,other,-0.0,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",prev_lp_T_max,other,-0.0,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",prev_lp_V_mean,other,2.2465822501925556,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",prev_lp_V_max,other,0.14080348154103217,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",prev_lp_V_min,other,-0.0,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",prev_lp_I_chg_mean,other,-0.4241109627688998,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",prev_lp_I_dis_peak,other,1.4361688857726607,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",prev_lp_rest_frac,other,-0.047125452369731716,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",lp_CC,other,-1.4034092859182268,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",lp_ADC,other,0.0,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",lp_PDC,other,0.0,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",lp_F,other,-0.0,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",lp_SoC,other,-2.8634569212937317,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",lp_dSoC,other,0.3885567470584019,,
+ElasticNet (tuned),"{'alpha': np.float64(0.1), 'l1_ratio': 0.8}",schedule_RTP_highCurrent,other,-0.0,,
