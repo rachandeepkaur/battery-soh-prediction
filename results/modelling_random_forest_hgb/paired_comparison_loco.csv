@@ -1,0 +1,2 @@
+a,b,scheme,n_folds,mean_diff,a_wins,b_wins,wilcoxon_p
+Random forest,HistGradientBoosting,LOCO,15,0.40971113513107604,8,7,0.93408203125
