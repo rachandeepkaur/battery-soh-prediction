@@ -279,11 +279,34 @@ def paired_comparison(a: CVResult, b: CVResult) -> dict:
     A negative ``mean_diff`` means model ``a`` has the lower error.
     """
     assert a.scheme == b.scheme, "compare models on the same split"
-    fa, fb = a.folds.set_index("fold").MAE, b.folds.set_index("fold").MAE
-    d = (fa - fb).dropna()
-    p = wilcoxon(d).pvalue if (d != 0).any() and len(d) >= 5 else np.nan
-    return dict(a=a.model, b=b.model, scheme=a.scheme, n_folds=len(d), mean_diff=d.mean(),
-                a_wins=int((d < 0).sum()), b_wins=int((d > 0).sum()), wilcoxon_p=p)
+    out = paired_test(a.folds.set_index("fold").MAE, b.folds.set_index("fold").MAE)
+    return dict(a=a.model, b=b.model, scheme=a.scheme, **out)
+
+
+def paired_test(mae_a: pd.Series, mae_b: pd.Series, tol: float = 1e-6) -> dict:
+    """Per-fold MAE of two models on the same folds -> mean difference, wins/losses/ties, Wilcoxon p.
+
+    Differences smaller than ``tol`` count as ties (identical models differ only by float noise),
+    and ties are dropped before the Wilcoxon test.
+    """
+    d = (mae_a - mae_b).dropna()
+    d = d.where(d.abs() >= tol, 0.0)
+    nz = d[d != 0]
+    p = wilcoxon(nz).pvalue if len(nz) >= 5 else np.nan
+    return dict(n_folds=len(d), mean_diff=d.mean(), a_wins=int((d < 0).sum()),
+                b_wins=int((d > 0).sum()), ties=int((d == 0).sum()), wilcoxon_p=p)
+
+
+def holm(pvalues) -> np.ndarray:
+    """Holm-Bonferroni adjusted p-values (controls false positives when running many tests)."""
+    p = np.asarray(pvalues, float)
+    out = np.full_like(p, np.nan)
+    ok = ~np.isnan(p)
+    order = np.argsort(p[ok])
+    m = ok.sum()
+    adj = np.maximum.accumulate((m - np.arange(m)) * p[ok][order]).clip(max=1.0)
+    out[np.flatnonzero(ok)[order]] = adj
+    return out
 
 
 # ----------------------------------------------------------------------------- locked hold-out

@@ -1,0 +1,21 @@
+model,reference,n_folds,MAE diff (model - ref),model wins,reference wins,ties,wilcoxon_p,holm_p
+Gradient boosting (HGB),ElasticNet,15,0.0236,8,7,0,0.4887,1.0
+Lasso,ElasticNet,15,0.3788,7,8,0,0.3894,1.0
+Random forest,ElasticNet,15,0.4334,8,7,0,1.0,1.0
+Ridge,ElasticNet,15,0.4549,5,10,0,0.0256,0.3325
+SVR (RBF),ElasticNet,15,0.8455,4,11,0,0.0554,0.4982
+MLR,ElasticNet,15,2.0286,2,13,0,0.0103,0.1641
+One feature: days_since_start,ElasticNet,15,3.5764,3,12,0,0.0151,0.2261
+Gaussian process,ElasticNet,15,3.6675,3,12,0,0.0084,0.1505
+Mean baseline,ElasticNet,15,4.2654,1,14,0,0.002,0.0403
+One feature: cum_EFC,ElasticNet,15,4.631,2,13,0,0.0084,0.1505
+ElasticNet,Ridge,15,-0.4549,10,5,0,0.0256,0.3325
+Gradient boosting (HGB),Ridge,15,-0.4313,10,5,0,0.1876,1.0
+Lasso,Ridge,15,-0.0762,9,6,0,0.4887,1.0
+Random forest,Ridge,15,-0.0216,9,6,0,0.4887,1.0
+SVR (RBF),Ridge,15,0.3906,9,6,0,0.8469,1.0
+MLR,Ridge,15,1.5737,6,9,0,0.1354,1.0
+One feature: days_since_start,Ridge,15,3.1214,4,11,0,0.0256,0.3325
+Gaussian process,Ridge,15,3.2126,5,10,0,0.0479,0.4791
+Mean baseline,Ridge,15,3.8104,2,13,0,0.0054,0.1021
+One feature: cum_EFC,Ridge,15,4.1761,4,11,0,0.0151,0.2261

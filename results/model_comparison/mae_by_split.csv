@@ -1,0 +1,12 @@
+model,LOCO,LOPO,Random 5-fold,Gap (LOCO - random)
+ElasticNet,4.2477,4.4503,2.794,1.4536
+Gradient boosting (HGB),4.275,4.4905,1.6254,2.6496
+Lasso,4.515,4.9,2.7727,1.7422
+Random forest,4.6514,4.4575,2.0462,2.6052
+Ridge,4.7605,4.8883,2.786,1.9746
+SVR (RBF),4.8111,5.8726,1.2407,3.5704
+MLR,5.8479,6.2388,2.8494,2.9984
+One feature: days_since_start,7.2598,7.3283,6.8669,0.3929
+Gaussian process,7.7185,8.1286,1.3022,6.4163
+Mean baseline,8.1766,8.236,7.8938,0.2828
+One feature: cum_EFC,8.4684,9.504,7.5288,0.9396

@@ -1,0 +1,12 @@
+model,interpolation,extrapolation,unclassified
+ElasticNet,2.5449,9.6581,5.0007
+Gradient boosting (HGB),2.3328,10.7394,4.2123
+Lasso,2.3907,11.6246,4.3233
+Random forest,2.0992,13.6253,3.0638
+Ridge,3.0857,10.2712,4.9074
+SVR (RBF),2.799,10.9634,6.4592
+MLR,4.3265,11.501,3.947
+One feature: days_since_start,5.4344,13.3822,7.0536
+Gaussian process,3.7906,20.5495,8.3553
+Mean baseline,6.2458,13.8652,10.4333
+One feature: cum_EFC,7.0474,13.0222,8.9753

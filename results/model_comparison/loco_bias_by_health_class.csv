@@ -1,0 +1,12 @@
+model,Healthy (>=90),Degraded (80-90),EOL risk (<80)
+ElasticNet,-2.5059,-1.6255,9.3185
+Gradient boosting (HGB),-1.3634,-0.7821,8.5719
+Lasso,-2.0513,-1.2413,10.8286
+Random forest,-1.8201,-0.1945,10.5187
+Ridge,-1.6373,-2.3533,9.2237
+SVR (RBF),-1.5014,-0.6782,12.5594
+MLR,-0.2553,-1.1612,9.0005
+One feature: days_since_start,-4.7563,-0.9726,17.7415
+Gaussian process,-4.102,-0.822,15.8023
+Mean baseline,-6.5542,1.4685,21.0928
+One feature: cum_EFC,-6.5145,0.7754,20.8322

@@ -1,0 +1,12 @@
+model,accuracy,macro_F1,EOL_recall,EOL_missed
+ElasticNet,0.7386,0.7215,0.717,15
+Gradient boosting (HGB),0.732,0.6852,0.6038,21
+Lasso,0.7549,0.7264,0.6981,16
+Random forest,0.7418,0.6779,0.5283,25
+Ridge,0.7549,0.7324,0.7547,13
+SVR (RBF),0.7157,0.6588,0.4906,27
+MLR,0.6928,0.649,0.6604,18
+One feature: days_since_start,0.4575,0.3534,0.0566,50
+Gaussian process,0.6111,0.5031,0.283,38
+Mean baseline,0.2157,0.1183,0.0,53
+One feature: cum_EFC,0.3791,0.2857,0.0,53
