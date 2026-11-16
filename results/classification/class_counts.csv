@@ -1,0 +1,4 @@
+health_class,rows,share_%,cells_with_class
+EOL risk (<80),53,17.3,8
+Degraded (80-90),66,21.6,12
+Healthy (>=90),187,61.1,15

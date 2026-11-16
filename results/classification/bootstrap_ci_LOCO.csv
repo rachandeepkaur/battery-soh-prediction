@@ -1,0 +1,4 @@
+model,macro_F1,macro_F1_95CI,EOL_recall,EOL_recall_95CI
+Logistic regression,0.706,0.58 to 0.80,0.547,0.28 to 0.81
+Ridge,0.732,0.58 to 0.84,0.755,0.50 to 0.93
+Majority class (floor),0.253,0.21 to 0.29,0.0,0.00 to 0.00
