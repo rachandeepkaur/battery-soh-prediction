@@ -1,103 +1,137 @@
 model,scheme,fold,held_out,n_test,MAE,n_selected,best_params
-Ridge,LOCO,0,2_009,21,1.8967065762220294,25,{'alpha': np.float64(100.0)}
-Ridge,LOCO,1,2_010,21,2.7072178871791004,24,{'alpha': np.float64(100.0)}
-Ridge,LOCO,2,2_012,22,7.966323454836206,22,{'alpha': np.float64(100.0)}
-Ridge,LOCO,3,2_027,22,2.3277317011538803,24,{'alpha': np.float64(100.0)}
-Ridge,LOCO,4,2_030,22,4.775742170327823,24,{'alpha': np.float64(100.0)}
-Ridge,LOCO,5,2_033,22,7.265719701843674,24,{'alpha': np.float64(31.622776601683793)}
-Ridge,LOCO,6,2_058,22,2.300336614217021,23,{'alpha': np.float64(31.622776601683793)}
-Ridge,LOCO,7,2_067,21,4.907358346224682,24,{'alpha': np.float64(100.0)}
-Ridge,LOCO,8,2_076,6,10.087897046559275,23,{'alpha': np.float64(10.0)}
-Ridge,LOCO,9,2_092,22,11.174678169753873,24,{'alpha': np.float64(3.1622776601683795)}
-Ridge,LOCO,10,2_095,16,12.26686089843507,24,{'alpha': np.float64(10.0)}
-Ridge,LOCO,11,2_098,22,2.9539604640521833,24,{'alpha': np.float64(31.622776601683793)}
-Ridge,LOCO,12,2_101,22,2.6943875496113874,24,{'alpha': np.float64(100.0)}
-Ridge,LOCO,13,2_104,22,1.9801048983133627,24,{'alpha': np.float64(100.0)}
-Ridge,LOCO,14,2_108,23,1.9360712110427287,24,{'alpha': np.float64(31.622776601683793)}
-SVR (RBF),LOCO,0,2_009,21,1.6847143754534197,25,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOCO,1,2_010,21,2.1355430910825004,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOCO,2,2_012,22,9.742399552561752,22,"{'C': 10, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOCO,3,2_027,22,2.6792160239660494,24,"{'C': 30, 'epsilon': 0.5, 'gamma': 0.003}"
-SVR (RBF),LOCO,4,2_030,22,4.1374205849301635,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOCO,5,2_033,22,6.327517554721274,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOCO,6,2_058,22,1.7917426800474248,23,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOCO,7,2_067,21,6.459188645453041,24,"{'C': 10, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOCO,8,2_076,6,16.166942155310746,23,"{'C': 10, 'epsilon': 1.0, 'gamma': 0.01}"
-SVR (RBF),LOCO,9,2_092,22,8.012102307681358,24,"{'C': 100, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOCO,10,2_095,16,14.748783200641531,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.01}"
-SVR (RBF),LOCO,11,2_098,22,2.657765201330793,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOCO,12,2_101,22,2.3736918637501447,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOCO,13,2_104,22,2.730514530008564,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOCO,14,2_108,23,1.4520875714155947,24,"{'C': 30, 'epsilon': 0.5, 'gamma': 0.003}"
-Gaussian process,LOCO,0,2_009,21,1.3863544575216,25,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOCO,1,2_010,21,2.417755023446693,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOCO,2,2_012,22,15.317566245208441,22,{'kernel': 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
-Gaussian process,LOCO,3,2_027,22,3.3454899267279514,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOCO,4,2_030,22,11.769299036826412,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOCO,5,2_033,22,2.965622038274511,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOCO,6,2_058,22,1.9817217852890865,23,{'kernel': 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
-Gaussian process,LOCO,7,2_067,21,8.355296218351459,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOCO,8,2_076,6,18.50919379588129,23,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOCO,9,2_092,22,30.221149410726323,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOCO,10,2_095,16,15.209861740444914,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOCO,11,2_098,22,2.5598920862165326,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOCO,12,2_101,22,3.343331495065473,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOCO,13,2_104,22,6.0589710947478075,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOCO,14,2_108,23,1.988087613603947,24,{'kernel': 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
-Ridge,LOPO,0,L03,42,2.769189691119352,25,{'alpha': np.float64(100.0)}
-Ridge,LOPO,1,L202,22,8.682275494019326,24,{'alpha': np.float64(100.0)}
+Ridge,LOCO,0,2_009,21,1.8967065762220219,25,{'alpha': np.float64(100.0)}
+Ridge,LOCO,1,2_010,21,2.707217887179075,24,{'alpha': np.float64(100.0)}
+Ridge,LOCO,2,2_012,22,7.966323454836201,22,{'alpha': np.float64(100.0)}
+Ridge,LOCO,3,2_027,22,2.3277317011538865,24,{'alpha': np.float64(100.0)}
+Ridge,LOCO,4,2_030,22,4.7757421703278515,24,{'alpha': np.float64(100.0)}
+Ridge,LOCO,5,2_033,22,7.265719701843671,24,{'alpha': np.float64(31.622776601683793)}
+Ridge,LOCO,6,2_058,22,2.3003366142170107,23,{'alpha': np.float64(31.622776601683793)}
+Ridge,LOCO,7,2_067,21,4.907358346224686,24,{'alpha': np.float64(100.0)}
+Ridge,LOCO,8,2_076,6,10.087897046559306,23,{'alpha': np.float64(10.0)}
+Ridge,LOCO,9,2_092,22,11.174678169753804,24,{'alpha': np.float64(3.1622776601683795)}
+Ridge,LOCO,10,2_095,16,12.266860898435077,24,{'alpha': np.float64(10.0)}
+Ridge,LOCO,11,2_098,22,2.953960464052182,24,{'alpha': np.float64(31.622776601683793)}
+Ridge,LOCO,12,2_101,22,2.6943875496114114,24,{'alpha': np.float64(100.0)}
+Ridge,LOCO,13,2_104,22,1.9801048983133607,24,{'alpha': np.float64(100.0)}
+Ridge,LOCO,14,2_108,23,1.9360712110427165,24,{'alpha': np.float64(31.622776601683793)}
+SVR (RBF),LOCO,0,2_009,21,1.6848210909041288,25,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOCO,1,2_010,21,2.1353499992218508,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOCO,2,2_012,22,9.742399552561748,22,"{'C': 10, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOCO,3,2_027,22,2.679216023966161,24,"{'C': 30, 'epsilon': 0.5, 'gamma': 0.003}"
+SVR (RBF),LOCO,4,2_030,22,4.137420584930434,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOCO,5,2_033,22,6.327517554721215,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOCO,6,2_058,22,1.7917426800475076,23,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOCO,7,2_067,21,6.459188645452986,24,"{'C': 10, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOCO,8,2_076,6,16.167024915549963,23,"{'C': 10, 'epsilon': 1.0, 'gamma': 0.01}"
+SVR (RBF),LOCO,9,2_092,22,8.012173804895479,24,"{'C': 100, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOCO,10,2_095,16,14.748785744119129,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.01}"
+SVR (RBF),LOCO,11,2_098,22,2.657582846103992,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOCO,12,2_101,22,2.373691863750234,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOCO,13,2_104,22,2.730645916476722,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOCO,14,2_108,23,1.4520875714155954,24,"{'C': 30, 'epsilon': 0.5, 'gamma': 0.003}"
+Gaussian process,LOCO,0,2_009,21,1.3863544575211635,25,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOCO,1,2_010,21,2.4177550234443266,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOCO,2,2_012,22,15.317566253634213,22,{'kernel': 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+Gaussian process,LOCO,3,2_027,22,3.3454904933465954,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOCO,4,2_030,22,11.769299036832438,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOCO,5,2_033,22,2.9656220382591942,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOCO,6,2_058,22,1.9817217852893416,23,{'kernel': 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+Gaussian process,LOCO,7,2_067,21,8.355295616480063,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOCO,8,2_076,6,18.509195769248866,23,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOCO,9,2_092,22,30.221166989858805,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOCO,10,2_095,16,15.209861803175116,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOCO,11,2_098,22,2.559892028616136,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOCO,12,2_101,22,3.3433312373983397,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOCO,13,2_104,22,6.058971094770535,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOCO,14,2_108,23,1.9880876136048817,24,{'kernel': 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+Ridge,LOPO,0,L03,42,2.769189691119328,25,{'alpha': np.float64(100.0)}
+Ridge,LOPO,1,L202,22,8.682275494019335,24,{'alpha': np.float64(100.0)}
 Ridge,LOPO,2,L206,16,12.82991126557273,24,{'alpha': np.float64(31.622776601683793)}
-Ridge,LOPO,3,L207,23,1.5423187512745666,24,{'alpha': np.float64(100.0)}
-Ridge,LOPO,4,L208,22,2.3277317011538803,24,{'alpha': np.float64(100.0)}
-Ridge,LOPO,5,L209,22,2.642622861616925,24,{'alpha': np.float64(3.1622776601683795)}
-Ridge,LOPO,6,L210,22,4.775742170327823,24,{'alpha': np.float64(100.0)}
+Ridge,LOPO,3,L207,23,1.5423187512745618,24,{'alpha': np.float64(100.0)}
+Ridge,LOPO,4,L208,22,2.3277317011538865,24,{'alpha': np.float64(100.0)}
+Ridge,LOPO,5,L209,22,2.6426228616169443,24,{'alpha': np.float64(3.1622776601683795)}
+Ridge,LOPO,6,L210,22,4.7757421703278515,24,{'alpha': np.float64(100.0)}
 Ridge,LOPO,7,L211,22,6.297572148694268,24,{'alpha': np.float64(100.0)}
-Ridge,LOPO,8,L213,22,2.137972165367647,23,{'alpha': np.float64(100.0)}
-Ridge,LOPO,9,L214,22,2.6943875496113874,24,{'alpha': np.float64(100.0)}
-Ridge,LOPO,10,L216,22,2.9618451094337717,24,{'alpha': np.float64(316.22776601683796)}
-Ridge,LOPO,11,L223,6,13.915691094330532,23,{'alpha': np.float64(100.0)}
-Ridge,LOPO,12,L35,22,10.762592990569571,22,{'alpha': np.float64(316.22776601683796)}
-Ridge,LOPO,13,V212,21,4.907358346224682,24,{'alpha': np.float64(100.0)}
-SVR (RBF),LOPO,0,L03,42,5.594073740698603,25,"{'C': 30, 'epsilon': 0.1, 'gamma': 0.003}"
-SVR (RBF),LOPO,1,L202,22,8.012102307681358,24,"{'C': 100, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOPO,2,L206,16,13.147460901749074,24,"{'C': 300, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOPO,3,L207,23,1.5041868205715418,24,"{'C': 30, 'epsilon': 0.1, 'gamma': 0.003}"
-SVR (RBF),LOPO,4,L208,22,3.350467574832401,24,"{'C': 100, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOPO,5,L209,22,2.657765201330793,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOPO,6,L210,22,6.175319290095987,24,"{'C': 300, 'epsilon': 0.5, 'gamma': 0.003}"
-SVR (RBF),LOPO,7,L211,22,6.327517554721274,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOPO,8,L213,22,1.7917426800474248,23,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOPO,9,L214,22,2.3736918637501447,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOPO,10,L216,22,4.743354490402241,24,"{'C': 300, 'epsilon': 1.0, 'gamma': 0.003}"
-SVR (RBF),LOPO,11,L223,6,15.612448106329277,23,"{'C': 30, 'epsilon': 0.1, 'gamma': 0.003}"
-SVR (RBF),LOPO,12,L35,22,14.834759578668077,22,"{'C': 300, 'epsilon': 0.1, 'gamma': 0.01}"
-SVR (RBF),LOPO,13,V212,21,5.598822567662668,24,"{'C': 100, 'epsilon': 1.0, 'gamma': 0.003}"
-Gaussian process,LOPO,0,L03,42,5.355630492764807,25,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOPO,1,L202,22,30.221149410726323,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOPO,2,L206,16,15.209861740444914,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOPO,3,L207,23,2.0643989292790637,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOPO,4,L208,22,2.3688560098592575,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOPO,5,L209,22,2.5598920862165326,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOPO,6,L210,22,11.769299036826412,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOPO,7,L211,22,2.965622038274511,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOPO,8,L213,22,1.9882979665061855,23,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOPO,9,L214,22,3.343331495065473,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOPO,10,L216,22,6.0589710947478075,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOPO,11,L223,6,18.50919379588129,23,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,LOPO,12,L35,22,15.317566245208441,22,{'kernel': 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
-Gaussian process,LOPO,13,V212,21,8.355296218351459,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Ridge,Random 5-fold,0,random,62,2.6544610695415076,23,{'alpha': np.float64(10.0)}
-Ridge,Random 5-fold,1,random,61,2.4959914668080847,24,{'alpha': np.float64(0.31622776601683794)}
-Ridge,Random 5-fold,2,random,61,3.865955904839498,22,{'alpha': np.float64(1.0)}
-Ridge,Random 5-fold,3,random,61,2.5884229969553183,24,{'alpha': np.float64(3.1622776601683795)}
-Ridge,Random 5-fold,4,random,61,2.3270791184057718,24,{'alpha': np.float64(1.0)}
-SVR (RBF),Random 5-fold,0,random,62,0.9533728538935092,23,"{'C': 300, 'epsilon': 0.1, 'gamma': 0.01}"
-SVR (RBF),Random 5-fold,1,random,61,1.0609935119279197,24,"{'C': 100, 'epsilon': 0.1, 'gamma': 0.03}"
-SVR (RBF),Random 5-fold,2,random,61,1.6528517134198015,22,"{'C': 300, 'epsilon': 0.1, 'gamma': 'scale'}"
-SVR (RBF),Random 5-fold,3,random,61,1.1699238344483982,24,"{'C': 300, 'epsilon': 0.1, 'gamma': 0.03}"
-SVR (RBF),Random 5-fold,4,random,61,1.3710120545762,24,"{'C': 300, 'epsilon': 0.1, 'gamma': 0.03}"
-Gaussian process,Random 5-fold,0,random,62,1.1003644815439146,23,"{'kernel': 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,Random 5-fold,1,random,61,1.1186583942039063,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,Random 5-fold,2,random,61,1.7785236564378866,22,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,Random 5-fold,3,random,61,1.2270117830799157,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
-Gaussian process,Random 5-fold,4,random,61,1.2899020936991143,24,{'kernel': 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+Ridge,LOPO,8,L213,22,2.1379721653676396,23,{'alpha': np.float64(100.0)}
+Ridge,LOPO,9,L214,22,2.6943875496114114,24,{'alpha': np.float64(100.0)}
+Ridge,LOPO,10,L216,22,2.9618451094337632,24,{'alpha': np.float64(316.22776601683796)}
+Ridge,LOPO,11,L223,6,13.915691094330526,23,{'alpha': np.float64(100.0)}
+Ridge,LOPO,12,L35,22,10.762592990569573,22,{'alpha': np.float64(316.22776601683796)}
+Ridge,LOPO,13,V212,21,4.907358346224686,24,{'alpha': np.float64(100.0)}
+SVR (RBF),LOPO,0,L03,42,5.594244846589804,25,"{'C': 30, 'epsilon': 0.1, 'gamma': 0.003}"
+SVR (RBF),LOPO,1,L202,22,8.012173804895479,24,"{'C': 100, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOPO,2,L206,16,13.147913444550898,24,"{'C': 300, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOPO,3,L207,23,1.5042162923918894,24,"{'C': 30, 'epsilon': 0.1, 'gamma': 0.003}"
+SVR (RBF),LOPO,4,L208,22,3.350553767441195,24,"{'C': 100, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOPO,5,L209,22,2.6575828461039985,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOPO,6,L210,22,6.175792188669879,24,"{'C': 300, 'epsilon': 0.5, 'gamma': 0.003}"
+SVR (RBF),LOPO,7,L211,22,6.327517554721212,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOPO,8,L213,22,1.7917426800474934,23,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOPO,9,L214,22,2.373691863750234,24,"{'C': 30, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOPO,10,L216,22,4.742906199073083,24,"{'C': 300, 'epsilon': 1.0, 'gamma': 0.003}"
+SVR (RBF),LOPO,11,L223,6,15.612448106329547,23,"{'C': 30, 'epsilon': 0.1, 'gamma': 0.003}"
+SVR (RBF),LOPO,12,L35,22,14.835008697733473,22,"{'C': 300, 'epsilon': 0.1, 'gamma': 0.01}"
+SVR (RBF),LOPO,13,V212,21,5.598815311430558,24,"{'C': 100, 'epsilon': 1.0, 'gamma': 0.003}"
+Gaussian process,LOPO,0,L03,42,5.3556304927733,25,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOPO,1,L202,22,30.221166989858805,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOPO,2,L206,16,15.209861803175116,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOPO,3,L207,23,2.064398929270865,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOPO,4,L208,22,2.368856745062032,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOPO,5,L209,22,2.559892028616136,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOPO,6,L210,22,11.769299036832438,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOPO,7,L211,22,2.9656220382591942,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOPO,8,L213,22,1.988298028494211,23,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOPO,9,L214,22,3.3433312373983397,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOPO,10,L216,22,6.058971094770535,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOPO,11,L223,6,18.509195769248866,23,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,LOPO,12,L35,22,15.317566253634213,22,{'kernel': 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+Gaussian process,LOPO,13,V212,21,8.355295616480063,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Ridge,Random 5-fold,0,random,62,2.654461069541502,23,{'alpha': np.float64(10.0)}
+Ridge,Random 5-fold,1,random,61,2.495991466807999,24,{'alpha': np.float64(0.31622776601683794)}
+Ridge,Random 5-fold,2,random,61,3.8659559048394927,22,{'alpha': np.float64(1.0)}
+Ridge,Random 5-fold,3,random,61,2.588422996955334,24,{'alpha': np.float64(3.1622776601683795)}
+Ridge,Random 5-fold,4,random,61,2.3270791184057633,24,{'alpha': np.float64(1.0)}
+SVR (RBF),Random 5-fold,0,random,62,0.9533535866854127,23,"{'C': 300, 'epsilon': 0.1, 'gamma': 0.01}"
+SVR (RBF),Random 5-fold,1,random,61,1.0610603891725656,24,"{'C': 100, 'epsilon': 0.1, 'gamma': 0.03}"
+SVR (RBF),Random 5-fold,2,random,61,1.6528332922557654,22,"{'C': 300, 'epsilon': 0.1, 'gamma': 'scale'}"
+SVR (RBF),Random 5-fold,3,random,61,1.1698755474153337,24,"{'C': 300, 'epsilon': 0.1, 'gamma': 0.03}"
+SVR (RBF),Random 5-fold,4,random,61,1.3710556052898064,24,"{'C': 300, 'epsilon': 0.1, 'gamma': 0.03}"
+Gaussian process,Random 5-fold,0,random,62,1.100364481544013,23,"{'kernel': 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,Random 5-fold,1,random,61,1.1186584159018371,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,Random 5-fold,2,random,61,1.778523656439414,22,"{'kernel': 1**2 * Matern(length_scale=5, nu=1.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,Random 5-fold,3,random,61,1.227011783079249,24,"{'kernel': 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+Gaussian process,Random 5-fold,4,random,61,1.2899020943068493,24,{'kernel': 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),LOCO,0,2_009,21,1.5320666119912998,25,{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),LOCO,1,2_010,21,2.5546015643920006,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOCO,2,2_012,22,11.04158977379385,22,{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),LOCO,3,2_027,22,3.2919159061083247,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOCO,4,2_030,22,13.162000040338723,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOCO,5,2_033,22,1.978614761538894,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOCO,6,2_058,22,2.0724792296999226,23,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOCO,7,2_067,21,9.323606365450873,24,{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),LOCO,8,2_076,6,17.961950568579258,23,{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),LOCO,9,2_092,22,30.101981265686195,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOCO,10,2_095,16,16.015699336380774,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOCO,11,2_098,22,2.7099412565563488,24,{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),LOCO,12,2_101,22,2.6889856275357507,24,{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),LOCO,13,2_104,22,7.773403815466116,24,{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),LOCO,14,2_108,23,1.8280888568956977,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOPO,0,L03,42,2.1932014353027447,25,{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),LOPO,1,L202,22,30.101981265686195,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOPO,2,L206,16,16.015699336380774,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOPO,3,L207,23,1.8280888568956977,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOPO,4,L208,22,3.2919159061083247,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOPO,5,L209,22,2.5924263609390823,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOPO,6,L210,22,13.162000040338723,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOPO,7,L211,22,1.978614761538894,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOPO,8,L213,22,2.293524342825476,23,{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),LOPO,9,L214,22,2.9187981302808854,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOPO,10,L216,22,7.773403815466116,24,{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),LOPO,11,L223,6,19.293353977948005,23,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),LOPO,12,L35,22,11.04158977379385,22,{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),LOPO,13,V212,21,9.147655724540211,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),Random 5-fold,0,random,62,1.1048800079689343,23,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),Random 5-fold,1,random,61,1.1005095424556375,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),Random 5-fold,2,random,61,1.7502468313202306,22,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"
+GP linear+RBF (post-hoc),Random 5-fold,3,random,61,1.2362239754451565,24,{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * RBF(length_scale=5) + WhiteKernel(noise_level=1)}
+GP linear+RBF (post-hoc),Random 5-fold,4,random,61,1.2830862311303974,24,"{'kernel': 1**2 * DotProduct(sigma_0=1) + 1**2 * Matern(length_scale=5, nu=2.5) + WhiteKernel(noise_level=1)}"

@@ -1,0 +1,4 @@
+model,interpolation,extrapolation,unclassified,Healthy (>=90),Degraded (80-90),EOL risk (<80),bias Healthy (>=90),bias Degraded (80-90),bias EOL risk (<80),EOL recall
+Average (ElasticNet + HGB),2.0937,10.1317,4.2307,2.4932,2.7306,10.7471,-1.9347,-1.2038,8.9452,0.6792
+ElasticNet,2.5449,9.6581,5.0007,3.1638,2.5232,10.2192,-2.5059,-1.6255,9.3185,0.717
+Gradient boosting (HGB),2.3328,10.7394,4.2123,2.0157,3.3776,13.3638,-1.3634,-0.7821,8.5719,0.6038

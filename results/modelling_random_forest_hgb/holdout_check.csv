@@ -1,2 +1,3 @@
 model,n_dev_cells,n_test,test_cells,MAE,RMSE
 HistGradientBoosting,12,65,"2_009, 2_092, 2_098",2.942557599460262,6.021000165803079
+Random forest,12,65,"2_009, 2_092, 2_098",3.8867198858499608,5.882368261391041

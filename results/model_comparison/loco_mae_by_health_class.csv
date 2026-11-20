@@ -4,7 +4,7 @@ Gradient boosting (HGB),2.0157,3.3776,13.3638
 Lasso,3.1934,2.5634,11.6081
 Random forest,2.7018,2.6703,13.9972
 Ridge,3.6274,3.6852,10.0975
-SVR (RBF),2.9932,3.2969,13.1108
+SVR (RBF),2.9932,3.2969,13.1109
 MLR,4.8175,5.2103,10.2771
 One feature: days_since_start,5.0887,4.992,17.744
 Gaussian process,5.8458,6.0736,16.3746

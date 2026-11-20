@@ -1,0 +1,4 @@
+model,LOCO,LOPO,Random 5-fold
+Average (ElasticNet + HGB),3.974,4.2037,1.9431
+ElasticNet,4.2477,4.4503,2.794
+Gradient boosting (HGB),4.275,4.4905,1.6254

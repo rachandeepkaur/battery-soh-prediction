@@ -104,8 +104,12 @@ class RedundancyPruner(BaseEstimator, TransformerMixin):
         Xf = Xf.loc[:, Xf.notna().any() & (Xf.nunique() > 1)]       # unusable in this fold
         self.ranking_ = rank_features(Xf, y, X[self.group_col].values)
         self.blocks_ = redundancy_blocks(Xf, self.threshold)
+        # Round before sorting: scores of tied features differ by ~1e-16 of float noise between runs, which
+        # otherwise flips the pick. Ties left after rounding go to the alphabetically first feature name.
         best = (self.ranking_.join(self.blocks_)
-                .sort_values(["score", "pooled_rho"], ascending=False)
+                .assign(_s=lambda t: t.score.round(10), _p=lambda t: t.pooled_rho.round(10),
+                        _name=lambda t: t.index)
+                .sort_values(["_s", "_p", "_name"], ascending=[False, False, True], kind="mergesort")
                 .groupby("block", sort=False).head(1))
         self.selected_ = [c for c in Xf.columns if c in best.index]   # keep original column order
         return self

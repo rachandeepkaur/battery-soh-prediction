@@ -1,0 +1,5 @@
+split,reference,n_folds,MAE diff (avg - ref),average wins,reference wins,ties,wilcoxon_p,holm_p
+LOCO,ElasticNet,15,-0.2576,11,4,0,0.0833,0.2498
+LOCO,Gradient boosting (HGB),15,-0.2812,7,8,0,0.804,1.0
+LOPO,ElasticNet,14,-0.2637,12,2,0,0.0353,0.1411
+LOPO,Gradient boosting (HGB),14,-0.2452,5,9,0,0.9515,1.0
