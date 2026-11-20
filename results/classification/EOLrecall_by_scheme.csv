@@ -1,0 +1,13 @@
+approach,model,Random 5-fold,LOCO,LOPO
+Direct classifier,Decision tree,0.849,0.415,0.415
+Direct classifier,Logistic regression,0.943,0.547,0.547
+Direct classifier,Majority class (floor),0.0,0.0,0.0
+Direct classifier,Random forest,0.925,0.472,0.472
+"Regression, then threshold",ElasticNet,0.83,0.717,0.642
+"Regression, then threshold",Gaussian process,0.925,0.283,0.283
+"Regression, then threshold",HistGradientBoosting,0.925,0.604,0.528
+"Regression, then threshold",Lasso,0.83,0.698,0.623
+"Regression, then threshold",Mean SOH (training mean),0.0,0.0,0.0
+"Regression, then threshold",Random forest (regressor),0.887,0.528,0.547
+"Regression, then threshold",Ridge,0.83,0.755,0.491
+"Regression, then threshold",SVR (RBF),0.962,0.491,0.321
