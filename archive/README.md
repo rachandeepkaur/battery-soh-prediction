@@ -6,3 +6,4 @@ These notebooks are kept only as a record of earlier work. They are not part of 
 - `samina_regression_pilot_2_009.ipynb` is the early one-cell pilot with a preliminary SOH estimate.
 
 Final results: notebooks 05-09 (evaluation protocol, models, comparison, classification).
+- `battery_data_processing_intermediate_2_009.ipynb` is the one-cell pilot from the intermediate report (HDF5 inspection and data-quality checks on cell 2_009). It pairs test records by sorted position, which can mislabel tests; the final pipeline matches them by test ID (`src/features.py`, notebook 01).
