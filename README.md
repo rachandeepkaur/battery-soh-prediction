@@ -1,37 +1,86 @@
-# battery-soh-prediction
-Supervised machine learning for battery State of Health (SOH) prediction under unseen conditions using Panasonic NCR18650B dataset.
+# How Reliable Are Supervised ML Models for Lithium-Ion Battery Health Prediction Under Unseen Operating Conditions?
+
+DATA 245 Machine Learning, Fall 2026, San José State University. Group 09:
+Kazi Samina Maraj Mumu, Sadaf Fatima Syeda, Kshitija Shinde, Shraddhaben Patel, Rachandeep Kaur.
+Instructor: Dr. Vishnu S. Pendyala.
+
+Public GitHub repository: https://github.com/rachandeepkaur/battery-soh-prediction
+
+## Project purpose
+
+We predict the State of Health (SOH) of Panasonic NCR18650B lithium-ion cells and ask how reliable supervised
+models are on batteries and operating profiles they have **never seen**. Every model is tested with the same
+protocol: leave-one-cell-out (main test), leave-one-profile-out, and random 5-fold (reference only).
+We compare 11 regression models and several classifiers. The final model is ElasticNet
+(4.25 SOH points of error on unseen cells).
+
+SOH (%) = 1C discharge capacity in a 25 °C reference test ÷ the same cell's first 25 °C capacity × 100.
+
+## Raw data (not included)
+
+The raw HDF5 files are **not** in this repository (`data/raw/` is git-ignored). The full public dataset is about 27 GB:
+"Ageing Data of Lithium-ion Panasonic NCR18650B Battery Cells", Zenodo 7896429,
+https://zenodo.org/records/7896429. We used 15 of its 116 cells.
+
+To rebuild everything from scratch, download the 15 cells into `data/raw/` (for example `data/raw/2_009.h5`)
+and run `python -m src.features data/raw results/rtp_features.csv`.
+This is only needed for notebooks 01 and 02, which read the raw files for the pilot inspection and EDA plots.
 
 ## Repository layout
 
-| Path | What it is |
+| Folder | Contents |
 |---|---|
-| `src/features.py` | Raw HDF5 → one row per Reference Test (RTP): SOH target + candidate features |
-| `notebooks/02_eda_feature_discovery.ipynb` | EDA for feature selection (leakage groups, within-cell correlation, leave-cell-out screening) |
-| `src/modelling.py` | Feature groups, fold-safe redundancy pruner, model grid (random / leave-cell-out / leave-profile-out) |
-| `notebooks/03_modelling.ipynb` | Model comparison with and without partial-capacity HIs |
-| `notebooks/battery_data_processing_intermediate_2_009.ipynb` | Pilot notebook (superseded, see note below) |
-| `results/rtp_features.csv` | Feature table produced by `src/features.py` |
-| `results/feature_screening_summary.csv` | Per-feature screening metrics from the EDA notebook |
-| `results/model_comparison.csv`, `results/oof_predictions.csv` | Metrics and out-of-fold predictions from notebook 03 |
-| `results/figures/` | EDA figures |
-| `data/raw/` | Cell `.h5` files from [Zenodo 7896429](https://zenodo.org/records/7896429) (git-ignored) |
+| `notebooks/` | The 9 active notebooks, each as `.ipynb` (with outputs) and `.py` |
+| `src/` | Shared code: `features.py` (raw HDF5 → one row per check-up), `evaluation.py` (shared protocol), `modelling.py` (feature pruner), `classification.py` |
+| `tests/` | `test_evaluation.py`: 9 automated checks of the evaluation protocol (run `python -m pytest tests`) |
+| `models/` | Saved models (see below) |
+| `results/` | The feature table and every result file the notebooks read or write |
+| `docs/` | Dataset documentation and the written evaluation protocol |
+| `archive/` | Superseded notebooks (one-cell pilot, first modelling notebook); kept for history, not part of the final results |
 
-## Reproduce
+| Notebook | What it does |
+|---|---|
+| 01_data_preprocessing | Builds and checks the 15-cell feature table, labels, splits and data dictionary |
+| 02_eda_feature_discovery | Exploratory analysis, feature timing and within-cell correlation |
+| 04_nonlinear_models | SVR and Gaussian process (with uncertainty) |
+| 05_evaluation_protocol | The shared evaluation protocol and leakage checks |
+| 06_modelling_random_forest_hgb | Random Forest and HistGradientBoosting |
+| 07_baselines | Training mean, single-feature models, MLR, Ridge, Lasso, ElasticNet |
+| 08_model_comparison | All models on the same folds, paired tests, error analysis, locked hold-out |
+| 09_classification | Health classes (Healthy / Degraded / EOL-risk) |
+| 10_final_model_and_demo | Saves the final model and runs the demo |
 
-```bash
-python3 -m venv .venv && .venv/bin/pip install h5py pandas numpy scipy matplotlib seaborn scikit-learn jupyter
-# download cells, e.g.
-curl -L -o data/raw/2_009.h5 "https://zenodo.org/records/7896429/files/2_009.h5?download=1"
-.venv/bin/python -m src.features data/raw results/rtp_features.csv
-.venv/bin/jupyter nbconvert --to notebook --execute --inplace notebooks/02_eda_feature_discovery.ipynb
-.venv/bin/jupyter nbconvert --to notebook --execute --inplace --ExecutePreprocessor.timeout=1200 notebooks/03_modelling.ipynb  # ~4 min
-```
+## How to run the notebooks
 
-## Data notes (important)
+1. Install Python 3.11 or newer and the packages:
+   `pip install numpy pandas scipy scikit-learn matplotlib seaborn joblib h5py jupyter`
+   (results were produced with scikit-learn 1.9.1; other versions can change some numbers slightly).
+2. Clone the repository and start Jupyter **inside it** (`jupyter notebook`).
+   The notebooks find `src/`, `results/` and `models/` whether they are run from `notebooks/` or from the main folder.
+3. Run the notebooks in number order. Notebooks 04 to 10 work **without the raw data**: they use the
+   included `results/rtp_features.csv`, `results/preprocessed/` and the other `results/` folders.
+   Notebook 08 reads the saved predictions of notebooks 04, 06 and 07, and notebook 09 reads those of 04, 06 and 07.
 
-* `tests/test_XXXX` matches `info.idtest == XXXX`. The `info` rows are **not** stored in test order, so pairing them
-  with sorted group names (as the pilot notebook does) mislabels tests.
-* SOH = 1C discharge capacity (4.2 → 2.5 V) in an RTP@25 °C ÷ the cell's first RTP@25 °C capacity. RTPs at 5/15/35/45 °C
-  give temperature-shifted capacities and are not used as SOH labels.
-* `chargecap`/`dischargecap` reset within a test, so capacities are taken as differences inside a single step.
-* RTP pulse currents are scaled to the cell's latest measured capacity; resistances are computed as ΔV / actual current.
+## Who did what
+
+| Member | Main work | Notebooks / code | Pull requests |
+|---|---|---|---|
+| Rachandeep Kaur | Feature extraction for 15 cells, preprocessing, shared evaluation protocol, tests, model comparison | 01, 05, 08; `src/features.py`, `src/evaluation.py`, `src/modelling.py`, `tests/` | commits to `main` |
+| Kshitija Shinde | EDA, feature-timing audit, Random Forest, HistGradientBoosting | 02, 06 | #2 |
+| Sadaf Fatima Syeda | SVR and Gaussian process, dataset documentation, literature survey | 04; `docs/dataset_documentation.md` | #4, #6 |
+| Shraddhaben Patel | Health classes and classification models | 09; `src/classification.py` | #7 |
+| Kazi Samina Maraj Mumu | Baselines and linear models, saved final model and demo, coordination | 07, 10; `models/` | #1, #3, #5, #8–#11 |
+
+Roles follow the CRediT taxonomy; see the slides and reports for the full statement.
+
+## Saved model and demo
+
+* `models/elasticnet_final.joblib` (15.5 KB): the final ElasticNet pipeline trained on all 15 cells
+  (alpha 0.1, l1_ratio 0.8, 25 kept inputs). Details in `models/elasticnet_final_info.json`.
+* `models/elasticnet_demo_12cells.joblib`: the same pipeline trained on 12 cells, used for the demo.
+* Demo: open `notebooks/10_final_model_and_demo.ipynb` and run all cells (under a minute). It loads the demo model,
+  predicts the 3 locked cells it never saw (2_009, 2_092, 2_098) and reports MAE 5.27, matching notebook 08.
+  Figures are written to `results/final_model/figures/`.
+
+To load a saved model in your own code, run Python from this folder (so `src` can be imported) and use
+`joblib.load("models/elasticnet_final.joblib")`.

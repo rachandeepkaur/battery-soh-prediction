@@ -224,3 +224,4 @@ data/raw/
 *.h5
 
 /reports/
+.DS_Store
